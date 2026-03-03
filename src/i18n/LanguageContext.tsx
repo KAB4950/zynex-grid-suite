@@ -2,6 +2,7 @@ import { createContext, useContext, useState, useCallback, ReactNode } from "rea
 import en from "./en.json";
 import da from "./da.json";
 
+
 type Language = "en" | "da";
 type Translations = typeof en;
 

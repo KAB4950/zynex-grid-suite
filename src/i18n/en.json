@@ -78,6 +78,26 @@
     "cta_title": "Request Full Technical Documentation",
     "cta_button": "Contact Engineering"
   },
+  "market_page": {
+    "hero_title": "Intelligent Grid Orchestration",
+    "hero_subtitle": "Maximizing asset ROI through autonomous algorithmic market participation. We transform static physical storage into an active, yielding financial instrument.",
+    "hero_placeholder": "[UI Render: Real-Time Algorithmic Trading Dashboard & Asset Status]",
+    "revenue_title": "Algorithmic Revenue Streams",
+    "card1_tag": "Strategy 01",
+    "card1_title": "Energy Arbitrage",
+    "card1_body": "Automated charging during off-peak, low-tariff periods and discharging during peak demand hours. Our algorithms predict market pricing fluctuations to capture maximum spread.",
+    "card2_tag": "Strategy 02",
+    "card2_title": "Peak Shaving",
+    "card2_body": "Actively monitoring facility load to discharge battery power during consumption spikes. This suppresses maximum demand charges levied by the macro-grid operator.",
+    "card3_tag": "Strategy 03",
+    "card3_title": "Frequency Containment (FCR)",
+    "card3_body": "Bidding battery capacity into national grid stabilization markets. Providing sub-second response times to correct grid frequency deviations, generating consistent, high-yield ancillary revenue.",
+    "viz_title": "Predictable Yield Modeling",
+    "viz_body": "Every deployment is preceded by rigorous, site-specific simulation. We cross-reference historical consumption data with volatile spot market pricing to generate highly accurate, risk-mitigated ROI projections.",
+    "viz_placeholder": "[Data Visualization: Stacked Area Chart showing 10-Year Cumulative Cash Flow]",
+    "cta_title": "Request a Financial Projection",
+    "cta_button": "Speak with a Market Analyst"
+  },
   "footer": {
     "tagline": "Intelligent Grid Orchestration",
     "sitemap": "Sitemap",
