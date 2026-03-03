@@ -37,7 +37,7 @@ const InfraSection = ({ title, body, cta, ctaLink, placeholder, imageFirst = fal
 
   const imageBlock = (
     <div
-      className="w-full aspect-video rounded-none flex items-center justify-center"
+      className="w-full min-h-[600px] rounded-none flex items-center justify-center"
       style={{ backgroundColor: "#F6F6F6" }}
     >
       <span className="text-sm text-muted-foreground tracking-wide text-center px-6">
@@ -48,7 +48,7 @@ const InfraSection = ({ title, body, cta, ctaLink, placeholder, imageFirst = fal
 
   return (
     <section className="py-28 px-8 md:px-16">
-      <div className="mx-auto max-w-7xl grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16 items-center">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 items-center">
         {imageFirst ? (
           <>
             {imageBlock}

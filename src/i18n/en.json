@@ -36,6 +36,23 @@
     "about_cta": "Read Corporate Profile",
     "about_placeholder": "[Photography: ZynexGroup Engineering Team]"
   },
+  "divider": {
+    "headline": "Engineered for Absolute Stability.",
+    "cta": "Contact Our Engineering Team",
+    "placeholder": "[Full-Bleed 3D Render: Macro Grid Substation at Twilight]"
+  },
+  "insights": {
+    "title": "Latest Insights",
+    "card1_date": "October 12, 2026",
+    "card1_category": "Operations",
+    "card1_headline": "Grid Frequency Stabilization Metrics: Q3 Analysis",
+    "card2_date": "September 28, 2026",
+    "card2_category": "Financial Logic",
+    "card2_headline": "Quantifying the ROI of C&I BESS Integration",
+    "card3_date": "September 05, 2026",
+    "card3_category": "Engineering",
+    "card3_headline": "Safety Protocols in High-Density Urban Battery Installations"
+  },
   "footer": {
     "tagline": "Intelligent Grid Orchestration",
     "sitemap": "Sitemap",
