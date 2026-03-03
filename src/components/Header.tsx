@@ -20,6 +20,7 @@ const Header = () => {
     { to: "/", label: t.nav.home },
     { to: "/battery", label: t.nav.battery },
     { to: "/the-market", label: t.nav.market },
+    { to: "/insights", label: (t.nav as any).insights || "Insights" },
     { to: "/about-us", label: t.nav.about },
   ];
 

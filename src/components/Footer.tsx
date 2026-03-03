@@ -28,8 +28,9 @@ const Footer = () => {
               {[
                 { to: "/", label: t.nav.home },
                 { to: "/battery", label: t.nav.battery },
-                { to: "/market", label: t.nav.market },
-                { to: "/about", label: t.nav.about },
+                { to: "/the-market", label: t.nav.market },
+                { to: "/insights", label: (t.nav as any).insights || "Insights" },
+                { to: "/about-us", label: t.nav.about },
                 { to: "/contact", label: t.nav.contact },
               ].map((link) => (
                 <Link
