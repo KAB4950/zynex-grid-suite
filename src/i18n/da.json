@@ -12,6 +12,16 @@
     "cta": "Udforsk Vores Infrastruktur",
     "placeholder": "[3D Twinmotion Render Pladsholder: C&I BESS Installation]"
   },
+  "value": {
+    "title": "Kerne Operationel Værdi",
+    "subtitle": "Algoritmisk styring af C&I batteriinfrastruktur giver tre distinkte finansielle og operationelle fordele.",
+    "cost_title": "Reduktion af Energiomkostninger",
+    "cost_body": "Implementering af peak shaving-algoritmer til at afbøde tarifspidser og optimere daglige forbrugsprofiler.",
+    "resilience_title": "Operationel Robusthed",
+    "resilience_body": "Lokal grid-uafhængighed og kontinuerlig strømforsyning til beskyttelse mod makro-grid volatilitet.",
+    "revenue_title": "Markedsindtægtsgenerering",
+    "revenue_body": "Monetarisering af kapacitet gennem Frequency Containment Reserves (FCR) og automatiseret energiarbitrage."
+  },
   "footer": {
     "tagline": "Intelligent Grid Orkestrering",
     "sitemap": "Sitemap",
