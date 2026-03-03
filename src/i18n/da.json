@@ -7,8 +7,10 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "Intelligent Grid Orkestrering",
-    "subtitle": "Vi bygger fremtidens energiinfrastruktur."
+    "title": "Intelligent Grid-Scale Energilagring.",
+    "subtitle": "Vi udvikler og driver højkapacitets kommerciel & industriel BESS-infrastruktur. Algoritmisk grid-orkestrering for energiuafhængighed og risikominimerede afkast.",
+    "cta": "Udforsk Vores Infrastruktur",
+    "placeholder": "[3D Twinmotion Render Pladsholder: C&I BESS Installation]"
   },
   "footer": {
     "tagline": "Intelligent Grid Orkestrering",
