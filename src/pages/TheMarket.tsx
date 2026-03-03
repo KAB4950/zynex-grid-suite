@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "@/i18n/LanguageContext";
-import { Button } from "@/components/ui/button";
 
 const TheMarket = () => {
   const { t } = useTranslation();
@@ -8,25 +7,31 @@ const TheMarket = () => {
 
   return (
     <>
-      {/* Section 1: Software Hero (Dark) */}
+      {/* Section 1: Software & Analytics Hero */}
       <section className="w-full min-h-[80vh] pt-32 pb-24 px-8 md:px-16 flex flex-col items-center justify-center bg-slate-900 text-white">
         <h1
-          className="text-5xl md:text-7xl font-semibold tracking-tight text-center max-w-4xl"
+          className="text-5xl md:text-7xl font-semibold tracking-tight text-center max-w-5xl text-gradient-blue"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           {m.hero_title}
         </h1>
-        <p className="text-xl text-gray-400 mt-6 text-center max-w-2xl leading-relaxed">
+        <p
+          className="text-xl mt-6 text-center max-w-3xl leading-relaxed"
+          style={{ fontFamily: "var(--font-body)", color: "#d1d5db" }}
+        >
           {m.hero_subtitle}
         </p>
-        <div className="w-full max-w-6xl mt-16 aspect-video bg-slate-800 border border-slate-700 shadow-2xl flex items-center justify-center text-slate-500">
-          <span className="text-sm tracking-wide text-center px-6">
+        <div
+          className="w-full max-w-6xl mt-16 aspect-[21/9] border shadow-2xl flex items-center justify-center rounded-none"
+          style={{ backgroundColor: "#0F172A", borderColor: "rgb(51 65 85)" }}
+        >
+          <span className="text-sm tracking-wide text-center px-6" style={{ color: "rgb(100 116 139)" }}>
             {m.hero_placeholder}
           </span>
         </div>
       </section>
 
-      {/* Section 2: Revenue Logic (3-Column Grid) */}
+      {/* Section 2: Revenue Logic (3-Column Financial Grid) */}
       <section className="py-24 px-8 md:px-16 bg-background">
         <div className="max-w-7xl mx-auto">
           <h2
@@ -43,7 +48,7 @@ const TheMarket = () => {
             ].map((card, i) => (
               <div
                 key={i}
-                className="border border-border p-8 flex flex-col h-full bg-background"
+                className="border-t-4 border-primary bg-secondary p-8 flex flex-col h-full rounded-none hover:bg-background hover:shadow-lg transition-all duration-300"
               >
                 <span className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">
                   {card.tag}
@@ -54,7 +59,7 @@ const TheMarket = () => {
                 >
                   {card.title}
                 </h3>
-                <p className="text-muted-foreground flex-grow leading-relaxed">
+                <p className="text-muted-foreground flex-grow leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
                   {card.body}
                 </p>
               </div>
@@ -63,39 +68,35 @@ const TheMarket = () => {
         </div>
       </section>
 
-      {/* Section 3: Data Visualization Placeholder */}
-      <section className="py-16 px-8 md:px-16 bg-secondary">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
-          <div className="md:w-1/3">
+      {/* Section 3: Data Visualization & Yield Modeling */}
+      <section className="py-24 px-8 md:px-16 bg-background border-y border-border">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+          <div className="md:w-1/2">
             <h2
               className="text-3xl font-semibold mb-6 text-foreground"
               style={{ fontFamily: "var(--font-heading)" }}
             >
               {m.viz_title}
             </h2>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
               {m.viz_body}
             </p>
+            <Link
+              to="/contact"
+              className="inline-block mt-8 px-8 py-4 bg-primary text-primary-foreground rounded-none uppercase tracking-wider text-sm font-semibold hover:opacity-90 transition-colors"
+            >
+              {m.cta_button}
+            </Link>
           </div>
-          <div className="w-full md:w-2/3 bg-background border border-border aspect-[21/9] flex items-center justify-center">
+          <div
+            className="w-full md:w-1/2 border border-border aspect-[4/3] flex items-center justify-center rounded-none"
+            style={{ backgroundColor: "#F6F6F6" }}
+          >
             <span className="text-sm text-muted-foreground tracking-wide text-center px-6">
               {m.viz_placeholder}
             </span>
           </div>
         </div>
-      </section>
-
-      {/* Section 4: CTA */}
-      <section className="py-24 text-center flex flex-col items-center bg-background border-t border-border">
-        <h2
-          className="text-3xl font-semibold text-foreground"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
-          {m.cta_title}
-        </h2>
-        <Button asChild className="mt-8 px-8 py-4 h-auto text-sm tracking-wider uppercase font-semibold">
-          <Link to="/contact">{m.cta_button}</Link>
-        </Button>
       </section>
     </>
   );
