@@ -78,6 +78,26 @@
     "cta_title": "Anmod om Fuld Teknisk Dokumentation",
     "cta_button": "Kontakt Ingeniørafdelingen"
   },
+  "market_page": {
+    "hero_title": "Intelligent Grid Orkestrering",
+    "hero_subtitle": "Maksimering af aktivets ROI gennem autonom algoritmisk markedsdeltagelse. Vi transformerer statisk fysisk lagring til et aktivt, afkastgivende finansielt instrument.",
+    "hero_placeholder": "[UI Render: Realtids Algoritmisk Handelsdashboard & Aktivstatus]",
+    "revenue_title": "Algoritmiske Indtægtsstrømme",
+    "card1_tag": "Strategi 01",
+    "card1_title": "Energiarbitrage",
+    "card1_body": "Automatisk opladning i lavtarifperioder og afladning i spidsbelastningsperioder. Vores algoritmer forudsiger markedsprisudsving for at opnå maksimal spredning.",
+    "card2_tag": "Strategi 02",
+    "card2_title": "Peak Shaving",
+    "card2_body": "Aktiv overvågning af facilitetens belastning for at aflade batteristrøm under forbrugsspidser. Dette undertrykker maksimale efterspørgselsafgifter pålagt af makro-grid operatøren.",
+    "card3_tag": "Strategi 03",
+    "card3_title": "Frekvensregulering (FCR)",
+    "card3_body": "Byde batterikapacitet ind på nationale gridstabiliseringsmarkeder. Levere sub-sekunders responstider til korrektion af gridfrekvensafvigelser og generere konsistent, højafkast-ancillær indtægt.",
+    "viz_title": "Forudsigelig Afkastmodellering",
+    "viz_body": "Hver udrulning indledes med grundig, stedspecifik simulering. Vi krydsrefererer historiske forbrugsdata med volatile spotmarkedspriser for at generere meget præcise, risikominimerede ROI-projektioner.",
+    "viz_placeholder": "[Datavisualisering: Stablet Arealgraf der viser 10-Års Kumulativt Cashflow]",
+    "cta_title": "Anmod om en Finansiel Projektion",
+    "cta_button": "Tal med en Markedsanalytiker"
+  },
   "footer": {
     "tagline": "Intelligent Grid Orkestrering",
     "sitemap": "Sitemap",
