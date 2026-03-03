@@ -9,19 +9,21 @@
   },
   "hero": {
     "title": "Intelligent Grid-Scale Energilagring.",
-    "subtitle": "Vi udvikler og driver højkapacitets kommerciel & industriel BESS-infrastruktur. Algoritmisk grid-orkestrering for energiuafhængighed og risikominimerede afkast.",
+    "subtitle": "Naviger volatile europæiske energimarkeder med højdensitets kommerciel & industriel BESS-infrastruktur. Afbød stigende tariffer, sikre drift med Island Mode backup og generer risikominimerede afkast.",
     "cta": "Udforsk Vores Infrastruktur",
     "placeholder": "[3D Twinmotion Render Pladsholder: C&I BESS Installation]"
   },
   "value": {
     "title": "Kerne Operationel Værdi",
-    "subtitle": "Algoritmisk styring af C&I batteriinfrastruktur giver tre distinkte finansielle og operationelle fordele.",
-    "cost_title": "Reduktion af Energiomkostninger",
-    "cost_body": "Implementering af peak shaving-algoritmer til at afbøde tarifspidser og optimere daglige forbrugsprofiler.",
-    "resilience_title": "Operationel Robusthed",
-    "resilience_body": "Lokal grid-uafhængighed og kontinuerlig strømforsyning til beskyttelse mod makro-grid volatilitet.",
-    "revenue_title": "Markedsindtægtsgenerering",
-    "revenue_body": "Monetarisering af kapacitet gennem Frequency Containment Reserves (FCR) og automatiseret energiarbitrage."
+    "subtitle": "Algoritmisk styring af C&I batteriinfrastruktur giver fire distinkte finansielle og operationelle fordele.",
+    "cost_title": "Tarifafbødning",
+    "cost_body": "Med skiftende gridtariffer er bag-måleren lagring kritisk. Vores algoritmer udfører peak shaving for at reducere maksimale efterspørgselsafgifter.",
+    "revenue_title": "Ancillære Tjenester",
+    "revenue_body": "Konstrueret til at opfylde strenge TSO prækvalifikationer. Monetarisér din kapacitet gennem Frequency Containment Reserves (FCR) med sub-sekunders respons.",
+    "resilience_title": "Island Mode Backup",
+    "resilience_body": "Garantér operationel kontinuitet. Under makro-grid fejl isolerer og leverer vores systemer automatisk uafbrudt strøm til kritisk infrastruktur.",
+    "sustainability_title": "Dekarbonisering",
+    "sustainability_body": "Erstat forurenende dieselgeneratorer med nulemissions lithium-ion teknologi, der direkte understøtter virksomhedens ESG-mandater."
   },
   "infra": {
     "battery_title": "Hardware: Højdensitets BESS-infrastruktur",

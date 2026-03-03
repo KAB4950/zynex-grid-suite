@@ -16,7 +16,7 @@ const Index = () => {
         <div className="mx-auto w-full max-w-7xl grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="flex flex-col items-start justify-center">
             <h1
-              className="text-4xl sm:text-5xl lg:text-6xl text-foreground leading-[1.08] tracking-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl text-gradient-blue leading-[1.08] tracking-tight"
               style={{ fontFamily: "var(--font-heading)" }}
             >
               {t.hero.title}
