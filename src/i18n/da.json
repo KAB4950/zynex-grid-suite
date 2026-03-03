@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Hjem",
+    "battery": "Batteriet",
+    "market": "Markedet",
+    "about": "Om Os",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Intelligent Grid Orkestrering",
+    "subtitle": "Vi bygger fremtidens energiinfrastruktur."
+  },
+  "footer": {
+    "tagline": "Intelligent Grid Orkestrering",
+    "sitemap": "Sitemap",
+    "headquarters": "Hovedkvarter",
+    "address": "Aarhus, Danmark",
+    "copyright": "© 2026 ZynexGroup. Alle rettigheder forbeholdes.",
+    "privacy": "Privatlivspolitik",
+    "terms": "Servicevilkår"
+  }
+}
