@@ -1,13 +1,14 @@
 import { useTranslation } from "@/i18n/LanguageContext";
-import { TrendingDown, Shield, LineChart } from "lucide-react";
+import { TrendingDown, Shield, LineChart, Leaf } from "lucide-react";
 
 const ValueProposition = () => {
   const { t } = useTranslation();
 
   const cards = [
     { icon: TrendingDown, title: t.value.cost_title, body: t.value.cost_body },
-    { icon: Shield, title: t.value.resilience_title, body: t.value.resilience_body },
     { icon: LineChart, title: t.value.revenue_title, body: t.value.revenue_body },
+    { icon: Shield, title: t.value.resilience_title, body: t.value.resilience_body },
+    { icon: Leaf, title: t.value.sustainability_title, body: t.value.sustainability_body },
   ];
 
   return (
@@ -27,13 +28,15 @@ const ValueProposition = () => {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-12">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 md:gap-10">
           {cards.map((card, i) => (
             <div
               key={i}
               className="rounded-none border border-border bg-background p-8 transition-all duration-200 hover:shadow-sm hover:-translate-y-1"
             >
-              <card.icon className="h-10 w-10 text-primary mb-6" strokeWidth={1.5} />
+              <div className="bg-blue-50 p-3 rounded-md inline-flex mb-6">
+                <card.icon className="h-10 w-10 text-primary" strokeWidth={1.5} />
+              </div>
               <h3
                 className="text-xl text-foreground"
                 style={{ fontFamily: "var(--font-heading)" }}

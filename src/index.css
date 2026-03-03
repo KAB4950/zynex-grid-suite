@@ -105,3 +105,13 @@
     font-weight: 600;
   }
 }
+
+@layer utilities {
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-[#A3BFFA] to-[#2c5cc5] bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-deep-sea {
+    @apply bg-gradient-to-b from-[#1E3A8A] to-[#0F172A];
+  }
+}

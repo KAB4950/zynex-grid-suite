@@ -9,19 +9,21 @@
   },
   "hero": {
     "title": "Intelligent Grid-Scale Energy Storage.",
-    "subtitle": "We develop and operate high-capacity Commercial & Industrial BESS infrastructure. Algorithmic grid orchestration for energy independence and risk-mitigated returns.",
+    "subtitle": "Navigate volatile European energy markets with high-density Commercial & Industrial BESS infrastructure. Mitigate rising tariffs, secure operations with Island Mode backup, and generate risk-mitigated returns.",
     "cta": "Explore Our Infrastructure",
     "placeholder": "[3D Twinmotion Render Placeholder: C&I BESS Installation]"
   },
   "value": {
     "title": "Core Operational Value",
-    "subtitle": "Algorithmic management of C&I battery infrastructure yields three distinct financial and operational advantages.",
-    "cost_title": "Energy Cost Reduction",
-    "cost_body": "Deploying peak shaving algorithms to mitigate tariff spikes and optimize daily consumption profiles.",
-    "resilience_title": "Operational Resilience",
-    "resilience_body": "Providing localized grid independence and continuous power supply to protect against macro-grid volatility.",
-    "revenue_title": "Market Revenue Generation",
-    "revenue_body": "Monetizing capacity through Frequency Containment Reserves (FCR) and automated energy arbitrage."
+    "subtitle": "Algorithmic management of C&I battery infrastructure yields four distinct financial and operational advantages.",
+    "cost_title": "Tariff Mitigation",
+    "cost_body": "With shifting grid tariffs, behind-the-meter storage is critical. Our algorithms execute peak shaving to slash maximum demand charges.",
+    "revenue_title": "Ancillary Services",
+    "revenue_body": "Engineered to meet strict TSO pre-qualifications. Monetize your capacity through Frequency Containment Reserves (FCR) with sub-second response.",
+    "resilience_title": "Island Mode Backup",
+    "resilience_body": "Guarantee operational continuity. During macro-grid failures, our systems automatically isolate and supply uninterrupted power to critical infrastructure.",
+    "sustainability_title": "Decarbonization",
+    "sustainability_body": "Replace polluting diesel generators with zero-emission lithium-ion technology, directly supporting corporate ESG mandates."
   },
   "infra": {
     "battery_title": "Hardware: High-Density BESS Infrastructure",
