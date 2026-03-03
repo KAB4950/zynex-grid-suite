@@ -3,6 +3,8 @@ import { useTranslation } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
 import ValueProposition from "@/components/ValueProposition";
 import InfrastructureRouting from "@/components/InfrastructureRouting";
+import FullBleedDivider from "@/components/FullBleedDivider";
+import LatestInsights from "@/components/LatestInsights";
 
 const Index = () => {
   const { t } = useTranslation();
@@ -47,6 +49,12 @@ const Index = () => {
 
       {/* Infrastructure Routing */}
       <InfrastructureRouting />
+
+      {/* Full-Bleed Divider */}
+      <FullBleedDivider />
+
+      {/* Latest Insights */}
+      <LatestInsights />
     </>
   );
 };

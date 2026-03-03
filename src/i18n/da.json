@@ -36,6 +36,23 @@
     "about_cta": "Læs Virksomhedsprofil",
     "about_placeholder": "[Fotografi: ZynexGroup Ingeniørteam]"
   },
+  "divider": {
+    "headline": "Konstrueret for Absolut Stabilitet.",
+    "cta": "Kontakt Vores Ingeniørteam",
+    "placeholder": "[Full-Bleed 3D Render: Makro Grid Station ved Skumring]"
+  },
+  "insights": {
+    "title": "Seneste Indsigter",
+    "card1_date": "12. oktober 2026",
+    "card1_category": "Drift",
+    "card1_headline": "Grid Frekvensstabilisering Metrikker: Q3 Analyse",
+    "card2_date": "28. september 2026",
+    "card2_category": "Finansiel Logik",
+    "card2_headline": "Kvantificering af ROI for C&I BESS Integration",
+    "card3_date": "5. september 2026",
+    "card3_category": "Ingeniørarbejde",
+    "card3_headline": "Sikkerhedsprotokoller i Højdensitets Urbane Batteriinstallationer"
+  },
   "footer": {
     "tagline": "Intelligent Grid Orkestrering",
     "sitemap": "Sitemap",
