@@ -22,6 +22,20 @@
     "revenue_title": "Market Revenue Generation",
     "revenue_body": "Monetizing capacity through Frequency Containment Reserves (FCR) and automated energy arbitrage."
   },
+  "infra": {
+    "battery_title": "Hardware: High-Density BESS Infrastructure",
+    "battery_body": "Engineered to premium Danish standards, our battery systems integrate with absolute physical and operational security. We deploy scalable, footprint-optimized hardware designed specifically for commercial and industrial environments.",
+    "battery_cta": "View Hardware Specs",
+    "battery_placeholder": "[3D Render: Battery Enclosure Detail]",
+    "market_title": "Software: Algorithmic Market Integration",
+    "market_body": "Intelligent grid orchestration actively manages energy flows to generate measurable returns. Our algorithms autonomously execute peak shaving, energy arbitrage, and Frequency Containment Reserves (FCR).",
+    "market_cta": "Explore Market ROI",
+    "market_placeholder": "[UI Dashboard Mockup: Algorithmic Trading]",
+    "about_title": "The Partner: Capitalized & Accountable",
+    "about_body": "ZynexGroup accelerates the green transition through transparency, operational clarity, and robust institutional backing. We build long-term infrastructure partnerships grounded in raw data and reliable engineering.",
+    "about_cta": "Read Corporate Profile",
+    "about_placeholder": "[Photography: ZynexGroup Engineering Team]"
+  },
   "footer": {
     "tagline": "Intelligent Grid Orchestration",
     "sitemap": "Sitemap",
