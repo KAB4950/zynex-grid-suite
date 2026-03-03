@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Home",
+    "battery": "The Battery",
+    "market": "The Market",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Intelligent Grid Orchestration",
+    "subtitle": "Engineering the energy infrastructure of tomorrow."
+  },
+  "footer": {
+    "tagline": "Intelligent Grid Orchestration",
+    "sitemap": "Sitemap",
+    "headquarters": "Headquarters",
+    "address": "Aarhus, Denmark",
+    "copyright": "© 2026 ZynexGroup. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
