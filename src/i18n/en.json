@@ -7,8 +7,10 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Intelligent Grid Orchestration",
-    "subtitle": "Engineering the energy infrastructure of tomorrow."
+    "title": "Intelligent Grid-Scale Energy Storage.",
+    "subtitle": "We develop and operate high-capacity Commercial & Industrial BESS infrastructure. Algorithmic grid orchestration for energy independence and risk-mitigated returns.",
+    "cta": "Explore Our Infrastructure",
+    "placeholder": "[3D Twinmotion Render Placeholder: C&I BESS Installation]"
   },
   "footer": {
     "tagline": "Intelligent Grid Orchestration",
