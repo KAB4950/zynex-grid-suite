@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
 import ValueProposition from "@/components/ValueProposition";
+import InfrastructureRouting from "@/components/InfrastructureRouting";
 
 const Index = () => {
   const { t } = useTranslation();
@@ -23,7 +24,7 @@ const Index = () => {
             </p>
             <Button
               asChild
-              className="mt-12 rounded-[4px] px-8 py-3 h-auto text-sm tracking-wider uppercase hover:shadow-[0_2px_4px_rgba(0,0,0,0.05)] hover:bg-primary/90 transition-all"
+              className="mt-12 px-8 py-3 h-auto text-sm tracking-wider uppercase hover:shadow-[0_2px_4px_rgba(0,0,0,0.05)] hover:bg-primary/90 transition-all"
             >
               <Link to="/battery">{t.hero.cta}</Link>
             </Button>
@@ -43,6 +44,9 @@ const Index = () => {
 
       {/* Value Proposition */}
       <ValueProposition />
+
+      {/* Infrastructure Routing */}
+      <InfrastructureRouting />
     </>
   );
 };

@@ -33,7 +33,7 @@ const ValueProposition = () => {
               key={i}
               className="rounded-none border border-border bg-background p-8 transition-all duration-200 hover:shadow-sm hover:-translate-y-1"
             >
-              <card.icon className="h-6 w-6 text-primary mb-6" strokeWidth={1.5} />
+              <card.icon className="h-10 w-10 text-primary mb-6" strokeWidth={1.5} />
               <h3
                 className="text-xl text-foreground"
                 style={{ fontFamily: "var(--font-heading)" }}
