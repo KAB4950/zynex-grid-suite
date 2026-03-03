@@ -12,6 +12,16 @@
     "cta": "Explore Our Infrastructure",
     "placeholder": "[3D Twinmotion Render Placeholder: C&I BESS Installation]"
   },
+  "value": {
+    "title": "Core Operational Value",
+    "subtitle": "Algorithmic management of C&I battery infrastructure yields three distinct financial and operational advantages.",
+    "cost_title": "Energy Cost Reduction",
+    "cost_body": "Deploying peak shaving algorithms to mitigate tariff spikes and optimize daily consumption profiles.",
+    "resilience_title": "Operational Resilience",
+    "resilience_body": "Providing localized grid independence and continuous power supply to protect against macro-grid volatility.",
+    "revenue_title": "Market Revenue Generation",
+    "revenue_body": "Monetizing capacity through Frequency Containment Reserves (FCR) and automated energy arbitrage."
+  },
   "footer": {
     "tagline": "Intelligent Grid Orchestration",
     "sitemap": "Sitemap",
