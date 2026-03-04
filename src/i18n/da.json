@@ -144,7 +144,17 @@
     "table_op_temp": "Driftstemperatur",
     "table_op_temp_value": "-30°C til 50°C (Derating over 45°C)",
     "table_cooling": "Kølemetode",
-    "table_cooling_value": "Væskekøling"
+    "table_cooling_value": "Væskekøling",
+    "contact_title": "Teknisk Forespørgsel og Indkøb.",
+    "contact_body": "Kontakt vores ingeniørteam for lokationsspecifik integrationsanalyse og detaljerede prisstrukturer.",
+    "contact_name": "Navn",
+    "contact_company": "Virksomhed",
+    "contact_email": "Arbejds-e-mail",
+    "contact_details": "Projektdetaljer / Lokationskrav",
+    "contact_submit": "Kontakt Ingeniørteam",
+    "contact_download": "Download Datablad PDF",
+    "contact_footer1": "Komponentniveau Datasporbarhed",
+    "contact_footer2": "ESG-kompatibel Produktion"
   },
   "market_page": {
     "hero_title": "Algoritmisk Grid Orkestrering.",

@@ -1,7 +1,7 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
-import { Check, ShieldAlert } from "lucide-react";
 
 const Battery = () => {
   const { t } = useTranslation();
@@ -296,56 +296,67 @@ const Battery = () => {
         </div>
       </section>
 
-      {/* Section 3: Multi-Layer Security */}
-      <section className="py-24 px-8 md:px-16 bg-secondary border-y border-border">
-        <div className="grid md:grid-cols-2 gap-16 max-w-7xl mx-auto">
-          <div>
-            <h3
-              className="text-2xl font-semibold mb-8 text-foreground"
-              style={{ fontFamily: "var(--font-heading)" }}
-            >
-              {b.safety_title}
-            </h3>
-            <div className="flex flex-col gap-5">
-              {[
-                { text: b.safety_point1, icon: "check" },
-                { text: b.safety_point2, icon: "shield" },
-                { text: b.safety_point3, icon: "check" },
-                { text: b.safety_point4, icon: "check" },
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  {item.icon === "shield" ? (
-                    <ShieldAlert className="w-5 h-5 mt-0.5 shrink-0" style={{ color: "#d97706" }} />
-                  ) : (
-                    <Check className="w-5 h-5 mt-0.5 shrink-0" style={{ color: "#266d51" }} />
-                  )}
-                  <span className="text-foreground/80 leading-relaxed">{item.text}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div
-            className="w-full h-full min-h-[300px] flex items-center justify-center"
-            style={{ backgroundColor: "#F6F6F6" }}
+      {/* Section 8: Contact & Procurement */}
+      <section className="w-full py-24 md:py-32 bg-gray-50 flex flex-col items-center justify-center border-t border-gray-200">
+        <div className="max-w-3xl w-full px-6 flex flex-col items-center text-center">
+          <h2
+            className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
+            style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
           >
-            <span className="text-sm tracking-wide text-center px-6" style={{ color: "#9ca3af" }}>
-              {b.safety_placeholder}
-            </span>
+            {b.contact_title}
+          </h2>
+          <p
+            className="text-lg leading-relaxed mb-12"
+            style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}
+          >
+            {b.contact_body}
+          </p>
+          <form className="w-full flex flex-col gap-4 mb-8 text-left" onSubmit={(e) => e.preventDefault()}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder={b.contact_name}
+                className="w-full p-4 border border-gray-300 rounded-sm bg-white text-gray-900 focus:outline-none focus:border-[#2c5cc5]"
+                style={{ fontFamily: "var(--font-body)" }}
+              />
+              <input
+                type="text"
+                placeholder={b.contact_company}
+                className="w-full p-4 border border-gray-300 rounded-sm bg-white text-gray-900 focus:outline-none focus:border-[#2c5cc5]"
+                style={{ fontFamily: "var(--font-body)" }}
+              />
+            </div>
+            <input
+              type="email"
+              placeholder={b.contact_email}
+              className="w-full p-4 border border-gray-300 rounded-sm bg-white text-gray-900 focus:outline-none focus:border-[#2c5cc5]"
+              style={{ fontFamily: "var(--font-body)" }}
+            />
+            <textarea
+              placeholder={b.contact_details}
+              className="w-full p-4 border border-gray-300 rounded-sm bg-white text-gray-900 focus:outline-none focus:border-[#2c5cc5] min-h-[120px]"
+              style={{ fontFamily: "var(--font-body)" }}
+            />
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4">
+              <button
+                type="submit"
+                className="w-full sm:w-auto bg-[#2c5cc5] text-white px-8 py-4 text-sm font-semibold rounded-full hover:bg-blue-700 transition-colors shadow-md cursor-pointer"
+              >
+                {b.contact_submit}
+              </button>
+              <button
+                type="button"
+                className="w-full sm:w-auto bg-transparent border-2 border-gray-300 text-gray-700 px-8 py-4 text-sm font-semibold rounded-full hover:border-[#2c5cc5] hover:text-[#2c5cc5] transition-colors cursor-pointer"
+              >
+                {b.contact_download}
+              </button>
+            </div>
+          </form>
+          <div className="mt-16 pt-8 border-t border-gray-200 w-full flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 text-xs font-bold uppercase tracking-widest" style={{ color: "#6b7280" }}>
+            <span>{b.contact_footer1}</span>
+            <span>{b.contact_footer2}</span>
           </div>
         </div>
-      </section>
-
-      {/* Section 4: CTA */}
-      <section className="py-32 text-center flex flex-col items-center bg-background">
-        <h2
-          className="text-3xl font-semibold text-foreground"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
-          {b.cta_title}
-        </h2>
-        <Button asChild className="mt-8 px-8 py-4 h-auto text-sm tracking-wider uppercase font-semibold rounded-none">
-          <Link to="/contact">{b.cta_button}</Link>
-        </Button>
       </section>
     </>
   );
