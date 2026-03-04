@@ -151,7 +151,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#2c5cc5] text-white px-8 py-4 text-sm font-semibold rounded-md hover:bg-blue-700 transition-colors shadow-md cursor-pointer disabled:opacity-60 uppercase tracking-wider"
+                  className="w-full bg-[#2c5cc5] text-white px-8 py-4 text-sm font-semibold rounded-full hover:bg-blue-700 transition-colors shadow-md cursor-pointer disabled:opacity-60 uppercase tracking-wider"
                 >
                   {isSubmitting ? cp.sending : cp.submit}
                 </button>

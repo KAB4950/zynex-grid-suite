@@ -7,7 +7,7 @@ const Battery = () => {
   const b = t.battery_page;
 
   return (
-    <>
+    <div className="flex flex-col gap-[15px] bg-white">
       {/* Section 1: ZG-261 Product Hero */}
       <section className="relative w-full h-screen min-h-[800px] flex items-center justify-start overflow-hidden -mt-[60px]">
         {/* Background */}
@@ -370,7 +370,7 @@ const Battery = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
