@@ -189,6 +189,49 @@ const Battery = () => {
       </section>
 
       {/* Section 5: High-Density Specification Grid */}
+      {/* Section 5: Safety & Containment Architecture */}
+      <section className="w-full py-24 md:py-32 bg-white flex justify-center border-t border-gray-200">
+        <div className="max-w-7xl w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left: Open Cabinet Image */}
+          <div className="relative w-full flex justify-center lg:justify-start">
+            <img src="/ZG_261_INTERNALS.webp" alt="ZG-261 Open Cabinet Architecture" className="w-full max-w-lg object-contain drop-shadow-2xl rounded-sm" />
+          </div>
+          {/* Right: Safety Protocol Text */}
+          <div className="flex flex-col items-start">
+            <h2
+              className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
+              style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
+            >
+              Three-tier safety and containment protocol.
+            </h2>
+            <p
+              className="text-lg leading-relaxed mb-10"
+              style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}
+            >
+              The system utilizes independent layers of hardware and software safety mechanisms to detect thermal events and contain them at the component level.
+            </p>
+            <div className="flex flex-col gap-8 w-full">
+              {[
+                { tier: "TIER 1", title: "Detection", desc: "Multi-level temperature sensors provide millisecond-level data reporting to the central controller." },
+                { tier: "TIER 2", title: "Suppression", desc: "PACK-level aerosol and water fire suppression systems, backed by multi-stage electrical fusing." },
+                { tier: "TIER 3", title: "Containment", desc: "The external cabinet features long-fiber alumina composite insulation, rated to withstand internal temperatures up to 1600°C." },
+              ].map((item) => (
+                <div key={item.tier} className="flex items-start gap-4">
+                  <div className="mt-1 shrink-0 bg-gray-100 text-[#2c5cc5] text-xs font-bold px-3 py-1 rounded-sm uppercase tracking-wider border border-gray-200">
+                    {item.tier}
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="font-bold mb-1" style={{ color: "#111827" }}>{item.title}</span>
+                    <span style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>{item.desc}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6: High-Density Specification Grid */}
       <section id="specs-section" className="py-24 px-8 md:px-16 bg-background">
         <div className="max-w-6xl mx-auto">
           <h2
