@@ -49,11 +49,9 @@ const Index = () => {
       </section>
 
       {/* Hero 2: End-to-End Infrastructure */}
-      <section className="relative w-full min-h-[85vh] bg-black border-t-4 border-black flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative w-full min-h-[85vh] bg-black border-t-[20px] border-white flex flex-col items-center justify-center overflow-hidden">
         {/* Earth background */}
-        <div className="absolute inset-0 z-0 bg-[url('/FRONT_EARTH.webp')] bg-cover bg-center bg-no-repeat opacity-50" />
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black z-10" />
+        <div className="absolute inset-0 z-0 bg-[url('/FRONT_EARTH.webp')] bg-cover bg-center bg-no-repeat opacity-100" />
         {/* Typography */}
         <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-4xl">
           <h2
