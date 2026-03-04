@@ -14,7 +14,7 @@ const Index = () => {
       {/* Hero */}
       <section
         className="h-screen w-full relative flex flex-col items-center justify-start pt-32 overflow-hidden bg-cover bg-center bg-no-repeat -mt-16"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: "url('/FRONT_HERO.webp')" }}
       >
         <h1
           className="text-6xl md:text-8xl font-bold text-[#494949] tracking-tight mb-2"
