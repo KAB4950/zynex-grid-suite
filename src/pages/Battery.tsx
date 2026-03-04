@@ -49,36 +49,36 @@ const Battery = () => {
       </section>
 
       {/* Section 2: STS & Grid Continuity */}
-      <section className="w-full py-24 md:py-32 bg-gray-50 flex justify-center border-b border-gray-200">
+      <section className="w-full py-32 md:py-48 bg-[#050505] flex justify-center border-b border-white/10">
         <div className="max-w-7xl w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Technical Copy */}
           <div className="flex flex-col items-start">
             <h2
-              className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
-              style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
+              className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6"
+              style={{ fontFamily: "var(--font-heading)" }}
             >
               {b.sts_title}
             </h2>
             <p
               className="text-lg leading-relaxed mb-10"
-              style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}
+              style={{ fontFamily: "var(--font-body)", color: "#9ca3af" }}
             >
               {b.sts_body}
             </p>
             <div className="border-l-4 border-[#2c5cc5] pl-6 flex flex-col gap-6">
               <div>
-                <p className="text-sm uppercase tracking-wider font-bold mb-1" style={{ color: "#111827" }}>
+                <p className="text-sm uppercase tracking-wider font-bold mb-1" style={{ color: "#d1d5db" }}>
                   {b.sts_overload_title}
                 </p>
-                <p className="text-base" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>
+                <p className="text-base" style={{ fontFamily: "var(--font-body)", color: "#6b7280" }}>
                   {b.sts_overload_desc}
                 </p>
               </div>
               <div>
-                <p className="text-sm uppercase tracking-wider font-bold mb-1" style={{ color: "#111827" }}>
+                <p className="text-sm uppercase tracking-wider font-bold mb-1" style={{ color: "#d1d5db" }}>
                   {b.sts_load_title}
                 </p>
-                <p className="text-base" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>
+                <p className="text-base" style={{ fontFamily: "var(--font-body)", color: "#6b7280" }}>
                   {b.sts_load_desc}
                 </p>
               </div>
@@ -89,7 +89,7 @@ const Battery = () => {
             <img
               src="/ZG_261_STS.webp"
               alt="ZG-261 Static Transfer Switch"
-              className="w-full max-w-lg object-contain drop-shadow-2xl rounded-sm"
+              className="w-full max-w-3xl object-contain"
             />
           </div>
         </div>
@@ -177,10 +177,9 @@ const Battery = () => {
       {/* Section 5: Safety & Containment Architecture */}
       <section className="w-full py-24 md:py-32 bg-[#000000] border-none flex justify-center">
         <div className="max-w-7xl w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left: Open Cabinet Image with vignette */}
+          {/* Left: Open Cabinet Image (transparent PNG, no overlays) */}
           <div className="relative w-full flex justify-center lg:justify-start max-w-3xl">
-            <img src="/ZG_261_INTERNALS.webp" alt="ZG-261 Open Cabinet Architecture" className="w-full object-contain relative z-0" />
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,#000000_100%)] z-10 pointer-events-none"></div>
+            <img src="/ZG_261_INTERNALS2.webp" alt="ZG-261 Open Cabinet Architecture" className="w-full max-w-3xl object-contain z-20" />
           </div>
           {/* Right: Safety Protocol Text */}
           <div className="flex flex-col items-start">
@@ -264,28 +263,46 @@ const Battery = () => {
           </h2>
           <table className="w-full text-left border-collapse border border-gray-200">
             <tbody>
-              {/* Category 1: General Parameters */}
+              {/* Category 1: DC Parameters */}
               <tr><td colSpan={2} className="bg-gray-50 font-bold uppercase tracking-widest text-xs md:text-sm p-4 border border-gray-200" style={{ color: "#111827" }}>{b.table_cat1}</td></tr>
-              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_rated_power}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>125kW</td></tr>
-              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_capacity}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>261kWh</td></tr>
-              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_cell_spec}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>314Ah (LFP)</td></tr>
-              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_efficiency}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>88%</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_capacity}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>261kWh</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_cell_capacity}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>314Ah (LFP)</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_battery_pack}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>1P260S</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_rated_voltage}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>832VDC</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_dc_voltage}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>728Vdc ~ 936Vdc</td></tr>
 
-              {/* Category 2: Electrical Data */}
+              {/* Category 2: AC Parameters */}
               <tr><td colSpan={2} className="bg-gray-50 font-bold uppercase tracking-widest text-xs md:text-sm p-4 border border-gray-200" style={{ color: "#111827" }}>{b.table_cat2}</td></tr>
-              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_ac_voltage}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>380V/400V, -15%~10%</td></tr>
-              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_dc_voltage}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>728Vdc~936Vdc</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_rated_power}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>125kW</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_ac_voltage}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>380V/400V, -15%~10%</td></tr>
               <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_connection}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>3P4W+PE</td></tr>
               <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_frequency}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>50Hz</td></tr>
               <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_power_factor}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>-1 (Leading) ~+1 (Lagging)</td></tr>
               <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_thdi}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_thdi_value}</td></tr>
 
-              {/* Category 3: Physical Data */}
+              {/* Category 3: Protection Functions */}
               <tr><td colSpan={2} className="bg-gray-50 font-bold uppercase tracking-widest text-xs md:text-sm p-4 border border-gray-200" style={{ color: "#111827" }}>{b.table_cat3}</td></tr>
-              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_dimensions}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>~989mm × 2471.5mm × 1465mm</td></tr>
-              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_weight}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>2.8T</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_ac_side}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_ac_side_value}</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_dc_side}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_dc_side_value}</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_fire_protection}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_fire_protection_value}</td></tr>
+
+              {/* Category 4: Environment Conditions */}
+              <tr><td colSpan={2} className="bg-gray-50 font-bold uppercase tracking-widest text-xs md:text-sm p-4 border border-gray-200" style={{ color: "#111827" }}>{b.table_cat4}</td></tr>
               <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_op_temp}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_op_temp_value}</td></tr>
-              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_cooling}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_cooling_value}</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_altitude}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>≤2000m</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_humidity}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_humidity_value}</td></tr>
+
+              {/* Category 5: Physical Characteristics */}
+              <tr><td colSpan={2} className="bg-gray-50 font-bold uppercase tracking-widest text-xs md:text-sm p-4 border border-gray-200" style={{ color: "#111827" }}>{b.table_cat5}</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_weight}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>~2.8T</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_dimensions}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>~989mm × 2471.5mm × 1465mm</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_corrosion}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_corrosion_value}</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_protection_rating}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>IP54</td></tr>
+
+              {/* Category 6: Others */}
+              <tr><td colSpan={2} className="bg-gray-50 font-bold uppercase tracking-widest text-xs md:text-sm p-4 border border-gray-200" style={{ color: "#111827" }}>{b.table_cat6}</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_cooling}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_cooling_value}</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_comm_interface}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>CAN/Ethernet/485</td></tr>
             </tbody>
           </table>
         </div>
