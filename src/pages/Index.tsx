@@ -42,7 +42,7 @@ const Index = () => {
         </div>
 
         {/* Image container pushed down */}
-        <div className="w-full h-[80vh] mt-[15vh] relative bg-[url('/FRONT_HERO.webp')] bg-cover bg-center bg-no-repeat">
+        <div className="w-full h-[80vh] mt-[7.5vh] relative bg-[url('/FRONT_HERO.webp')] bg-cover bg-center bg-no-repeat">
           {/* Scrim inside image container */}
           <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-white via-white/40 to-transparent pointer-events-none" />
         </div>
