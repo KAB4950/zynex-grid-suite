@@ -142,7 +142,53 @@ const Battery = () => {
         </div>
       </section>
 
-      {/* Section 4: High-Density Specification Grid */}
+      {/* Section 4: Thermal Management System */}
+      <section className="w-full py-24 md:py-32 bg-[#050505] flex flex-col items-center justify-center">
+        <div className="max-w-6xl w-full px-6 flex flex-col items-center">
+          <img
+            src="/Gemini_Generated_Image_pwlfnepwlfnepwlf.webp"
+            alt="Liquid Cooling Infrastructure"
+            className="w-full max-w-4xl object-cover rounded-xl shadow-2xl mb-12 border border-white/10"
+          />
+          <div className="bg-[#111111] border border-white/10 rounded-2xl p-8 md:p-12 max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            {/* Left: Copy */}
+            <div>
+              <h2
+                className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-4"
+                style={{ fontFamily: "var(--font-heading)" }}
+              >
+                Closed-loop liquid cooling infrastructure.
+              </h2>
+              <p
+                className="text-base md:text-lg leading-relaxed"
+                style={{ fontFamily: "var(--font-body)", color: "#9ca3af" }}
+              >
+                Operating temperatures dictate cell degradation rates. This system employs liquid cooling to maintain internal DC-side temperature differences within a ±1.5°C margin.
+              </p>
+            </div>
+            {/* Right: Operational Parameters */}
+            <div className="md:border-l md:border-white/10 md:pl-12 flex flex-col gap-6">
+              <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: "#6b7280" }}>
+                OPERATIONAL PARAMETERS
+              </p>
+              <div className="flex items-start">
+                <span className="w-2 h-2 rounded-full bg-[#2c5cc5] mt-2 mr-3 shrink-0" />
+                <span className="text-white font-medium leading-snug" style={{ fontFamily: "var(--font-body)" }}>
+                  Functions in ambient temperatures ranging from -30°C to 50°C.
+                </span>
+              </div>
+              <div className="flex items-start">
+                <span className="w-2 h-2 rounded-full bg-[#2c5cc5] mt-2 mr-3 shrink-0" />
+                <span className="text-white font-medium leading-snug" style={{ fontFamily: "var(--font-body)" }}>
+                  Calculated for a 5-year maintenance-free lifecycle under standard load profiles.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5: High-Density Specification Grid */}
       <section id="specs-section" className="py-24 px-8 md:px-16 bg-background">
         <div className="max-w-6xl mx-auto">
           <h2
