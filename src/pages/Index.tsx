@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <>
       {/* Hero */}
-      <section className="relative w-full pt-32 pb-0 flex flex-col items-center bg-white overflow-hidden -mt-16">
+      <section className="relative w-full pt-12 pb-0 flex flex-col items-center bg-white overflow-hidden -mt-16">
         {/* Typography & Button */}
         <div className="relative z-20 flex flex-col items-center text-center mt-4">
           <h1
