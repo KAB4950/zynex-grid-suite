@@ -18,35 +18,48 @@ const Battery = () => {
 
   return (
     <>
-      {/* Section 1: Deep Sea Hardware Hero */}
-      <section className="min-h-[75vh] pt-32 pb-16 px-8 md:px-16 flex items-center bg-gradient-deep-sea">
-        <div className="grid md:grid-cols-2 gap-12 w-full max-w-7xl mx-auto items-center">
-          <div>
-            <h1
-              className="text-5xl md:text-7xl font-semibold text-white tracking-tight mb-6"
-              style={{ fontFamily: "var(--font-heading)" }}
-            >
-              {b.hero_title}
-            </h1>
-            <p
-              className="text-xl leading-relaxed"
-              style={{ fontFamily: "var(--font-body)", color: "#d1d5db" }}
-            >
-              {b.hero_subtitle}
-            </p>
-          </div>
-          <div className="w-full aspect-[4/3] rounded-none border flex items-center justify-center backdrop-blur-sm"
-            style={{ backgroundColor: "rgba(255,255,255,0.05)", borderColor: "rgba(255,255,255,0.1)" }}
+      {/* Section 1: ZG-261 Product Hero */}
+      <section className="relative w-full h-screen min-h-[800px] flex items-center justify-start overflow-hidden">
+        {/* Background */}
+        <div className="absolute inset-0 bg-[url('/ZG_261_PARK.webp')] bg-cover bg-center bg-no-repeat z-0" />
+        {/* Left-side scrim */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
+        {/* Text */}
+        <div className="relative z-20 flex flex-col items-start px-6 md:px-16 lg:px-24 max-w-4xl pt-20">
+          <span
+            className="text-sm md:text-base tracking-[0.2em] font-bold uppercase mb-4"
+            style={{ fontFamily: "var(--font-body)", color: "#d1d5db" }}
           >
-            <span className="text-sm tracking-wide text-center px-6" style={{ color: "#9ca3af" }}>
-              {b.hero_placeholder}
-            </span>
+            ZYNEXGROUP COMMERCIAL ENERGY INFRASTRUCTURE
+          </span>
+          <h1
+            className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-white"
+            style={{ fontFamily: "var(--font-heading)" }}
+          >
+            125kW / 261kWh Battery Energy Storage System.
+          </h1>
+          <p
+            className="text-lg md:text-xl leading-relaxed max-w-2xl mb-10"
+            style={{ fontFamily: "var(--font-body)", color: "#e5e7eb" }}
+          >
+            Liquid-cooled energy storage for industrial grid continuity, peak load management, and power quality regulation.
+          </p>
+          <div className="flex flex-wrap items-center gap-4">
+            <Button asChild className="bg-[#2c5cc5] text-white px-8 py-4 h-auto text-sm font-semibold rounded-full hover:bg-blue-700 transition-colors shadow-lg border-none">
+              <Link to="/contact">Request Technical Consultation</Link>
+            </Button>
+            <button
+              onClick={() => document.getElementById('specs-section')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-transparent border-2 border-white/70 text-white px-8 py-4 text-sm font-semibold rounded-full hover:bg-white hover:text-black transition-all duration-300"
+            >
+              View Specifications
+            </button>
           </div>
         </div>
       </section>
 
       {/* Section 2: High-Density Specification Grid */}
-      <section className="py-24 px-8 md:px-16 bg-background">
+      <section id="specs-section" className="py-24 px-8 md:px-16 bg-background">
         <div className="max-w-6xl mx-auto">
           <h2
             className="text-3xl font-semibold mb-12 text-gradient-blue"
