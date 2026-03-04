@@ -8,10 +8,11 @@
     "insights": "Indsigter"
   },
   "hero": {
-    "title": "Intelligent Grid-Scale Energilagring.",
-    "subtitle": "Naviger volatile europæiske energimarkeder med højdensitets kommerciel & industriel BESS-infrastruktur. Afbød stigende tariffer, sikre drift med Island Mode backup og generer risikominimerede afkast.",
-    "cta": "Udforsk Vores Infrastruktur",
-    "placeholder": "[3D Twinmotion Render Pladsholder: C&I BESS Installation]"
+    "title": "ZG-261",
+    "specs": "261kWh / 125kW",
+    "subtitle": "Nøglefærdig batterienergilagring til kommercielle virksomheder.",
+    "cta_primary": "Læs mere",
+    "cta_secondary": "Kontakt Salg"
   },
   "value": {
     "title": "Kerne Operationel Værdi",
