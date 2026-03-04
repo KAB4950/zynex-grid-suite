@@ -48,6 +48,41 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Hero 2: End-to-End Infrastructure */}
+      <section className="relative w-full min-h-[85vh] bg-black border-t-4 border-black flex flex-col items-center justify-center overflow-hidden">
+        {/* Earth background */}
+        <div className="absolute inset-0 z-0 bg-[url('/FRONT_EARTH.webp')] bg-cover bg-center bg-no-repeat opacity-50" />
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black z-10" />
+        {/* Typography */}
+        <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-4xl">
+          <h2
+            className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-4"
+            style={{ fontFamily: "var(--font-heading)" }}
+          >
+            {t.hero2.headline}
+          </h2>
+          <h3
+            className="text-2xl md:text-3xl font-medium text-gray-300 mb-8"
+            style={{ fontFamily: "var(--font-body)" }}
+          >
+            {t.hero2.subheadline}
+          </h3>
+          <p
+            className="text-lg md:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
+            style={{ fontFamily: "var(--font-body)" }}
+          >
+            {t.hero2.paragraph}
+          </p>
+          <Link
+            to="/about"
+            className="bg-white text-black px-8 py-3 text-sm font-semibold rounded-full hover:bg-gray-200 transition-all duration-300 shadow-lg"
+          >
+            {t.hero2.cta}
+          </Link>
+        </div>
+      </section>
+
       {/* Value Proposition */}
       <ValueProposition />
 

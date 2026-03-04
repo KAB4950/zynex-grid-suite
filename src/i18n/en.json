@@ -14,6 +14,12 @@
     "cta_primary": "Learn more",
     "cta_secondary": "Contact Sales"
   },
+  "hero2": {
+    "headline": "End-to-End Infrastructure.",
+    "subheadline": "We handle the complexity. You capture the ROI.",
+    "paragraph": "As a specialized C&I project developer, ZynexGroup manages the entire lifecycle of your energy storage asset. We navigate grid-connection permitting, site engineering, and hardware installation to deliver fully operational, turnkey infrastructure.",
+    "cta": "About ZynexGroup"
+  },
   "value": {
     "title": "Core Operational Value",
     "subtitle": "Algorithmic management of C&I battery infrastructure yields four distinct financial and operational advantages.",
