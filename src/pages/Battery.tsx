@@ -3,15 +3,6 @@ import { useTranslation } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Check, ShieldAlert } from "lucide-react";
 
-const specItems = [
-  { labelKey: "spec1_label", valueKey: "spec1_value" },
-  { labelKey: "spec2_label", valueKey: "spec2_value" },
-  { labelKey: "spec3_label", valueKey: "spec3_value" },
-  { labelKey: "spec4_label", valueKey: "spec4_value" },
-  { labelKey: "spec5_label", valueKey: "spec5_value" },
-  { labelKey: "spec6_label", valueKey: "spec6_value" },
-] as const;
-
 const Battery = () => {
   const { t } = useTranslation();
   const b = t.battery_page;
@@ -267,30 +258,41 @@ const Battery = () => {
         </div>
       </section>
 
-      {/* Section 7: High-Density Specification Grid */}
-      <section id="specs-section" className="py-24 px-8 md:px-16 bg-background">
-        <div className="max-w-6xl mx-auto">
+      {/* Section 7: Technical Specifications Table */}
+      <section id="specs-section" className="w-full py-24 md:py-32 bg-white flex justify-center border-t border-gray-200">
+        <div className="max-w-5xl w-full px-6 md:px-12 flex flex-col items-center">
           <h2
-            className="text-3xl font-semibold mb-12 text-gradient-blue"
-            style={{ fontFamily: "var(--font-heading)" }}
+            className="text-3xl md:text-4xl font-bold tracking-tight mb-12 w-full text-left md:text-center"
+            style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
           >
-            {b.specs_title}
+            {b.table_title}
           </h2>
-          <div className="grid md:grid-cols-2 gap-x-16 gap-y-8">
-            {specItems.map((item) => (
-              <div
-                key={item.labelKey}
-                className="flex flex-col border-l-2 border-primary pl-4"
-              >
-                <span className="text-sm text-muted-foreground uppercase tracking-wider">
-                  {(b as any)[item.labelKey]}
-                </span>
-                <span className="text-lg font-semibold text-foreground mt-1">
-                  {(b as any)[item.valueKey]}
-                </span>
-              </div>
-            ))}
-          </div>
+          <table className="w-full text-left border-collapse border border-gray-200">
+            <tbody>
+              {/* Category 1: General Parameters */}
+              <tr><td colSpan={2} className="bg-gray-50 font-bold uppercase tracking-widest text-xs md:text-sm p-4 border border-gray-200" style={{ color: "#111827" }}>{b.table_cat1}</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_rated_power}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>125kW</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_capacity}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>261kWh</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_cell_spec}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>314Ah (LFP)</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_efficiency}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>88%</td></tr>
+
+              {/* Category 2: Electrical Data */}
+              <tr><td colSpan={2} className="bg-gray-50 font-bold uppercase tracking-widest text-xs md:text-sm p-4 border border-gray-200" style={{ color: "#111827" }}>{b.table_cat2}</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_ac_voltage}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>380V/400V, -15%~10%</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_dc_voltage}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>728Vdc~936Vdc</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_connection}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>3P4W+PE</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_frequency}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>50Hz</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_power_factor}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>-1 (Leading) ~+1 (Lagging)</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_thdi}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_thdi_value}</td></tr>
+
+              {/* Category 3: Physical Data */}
+              <tr><td colSpan={2} className="bg-gray-50 font-bold uppercase tracking-widest text-xs md:text-sm p-4 border border-gray-200" style={{ color: "#111827" }}>{b.table_cat3}</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_dimensions}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>~989mm × 2471.5mm × 1465mm</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_weight}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>2.8T</td></tr>
+              <tr className="bg-white"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_op_temp}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_op_temp_value}</td></tr>
+              <tr className="bg-gray-50/50"><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_cooling}</td><td className="border border-gray-200 p-4 font-medium text-sm md:text-base" style={{ color: "#374151" }}>{b.table_cooling_value}</td></tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
