@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "@/i18n/LanguageContext";
 import { NavLink } from "@/components/NavLink";
@@ -7,15 +6,7 @@ import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
   const { language, setLanguage, t } = useTranslation();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   const navLinks = [
     { to: "/", label: t.nav.home },
     { to: "/battery", label: "ZG-261" },
@@ -27,7 +18,7 @@ const Header = () => {
   const langToggle = (
     <button
       onClick={() => setLanguage(language === "en" ? "da" : "en")}
-      className="flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-[#2c5cc5] transition-colors cursor-pointer"
+      className="flex items-center gap-2 text-sm font-semibold text-gray-900 hover:text-[#2c5cc5] transition-colors cursor-pointer"
       style={{ fontFamily: "var(--font-body)" }}
     >
       {language === "en" ? "🇩🇰 DA" : "🇬🇧 EN"}
@@ -36,11 +27,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-background/95 backdrop-blur-sm shadow-[0_2px_4px_rgba(0,0,0,0.05)]"
-          : "bg-transparent"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm"
     >
       <div className="flex items-center justify-center w-full px-4 py-2">
         {/* Desktop Nav - all elements in one centered group */}

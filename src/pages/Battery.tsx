@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
@@ -14,7 +13,7 @@ const Battery = () => {
         {/* Background */}
         <div className="absolute inset-0 bg-[url('/ZG_261_PARK.webp')] bg-cover bg-center bg-no-repeat z-0" />
         {/* Left-side scrim */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 from-10% via-black/50 via-35% to-transparent to-50% z-10 w-full md:w-2/3" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/95 from-20% via-black/70 via-50% to-transparent to-80% z-10 w-full md:w-3/4" />
         {/* Text */}
         <div className="relative z-20 flex flex-col items-start px-6 md:px-16 lg:px-24 max-w-4xl pt-20">
           <span
@@ -97,38 +96,34 @@ const Battery = () => {
       </section>
 
       {/* Section 3: Physical Dimensions & Energy Density */}
-      <section className="w-full py-24 md:py-32 bg-white flex justify-center">
-        <div className="max-w-7xl w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="flex flex-col items-start">
-            <h2
-              className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
-              style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
-            >
-              {b.dim_title}
-            </h2>
-            <p
-              className="text-lg leading-relaxed mb-10"
-              style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}
-            >
-              {b.dim_body}
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full border-t border-gray-200 pt-8">
-              <div>
-                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>{b.dim_dimensions_label}</p>
-                <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>{b.dim_dimensions_value}</p>
-              </div>
-              <div>
-                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>{b.dim_weight_label}</p>
-                <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>{b.dim_weight_value}</p>
-              </div>
-              <div className="col-span-1 sm:col-span-2">
-                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>{b.dim_enclosure_label}</p>
-                <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>{b.dim_enclosure_value}</p>
-              </div>
+      <section className="relative w-full h-[90vh] min-h-[800px] flex items-center justify-start overflow-hidden bg-gray-50">
+        <img src="/ZG_261_SINGLE.webp" alt="ZG-261 Single Cabinet" className="absolute inset-0 w-full h-full object-cover object-center z-0 opacity-90" />
+        <div className="relative z-20 bg-white/95 backdrop-blur-md p-10 md:p-14 rounded-2xl shadow-2xl max-w-2xl mx-6 md:mx-16 border border-gray-100">
+          <h2
+            className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
+            style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
+          >
+            {b.dim_title}
+          </h2>
+          <p
+            className="text-lg leading-relaxed mb-10"
+            style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}
+          >
+            {b.dim_body}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full border-t border-gray-200 pt-8">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>{b.dim_dimensions_label}</p>
+              <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>{b.dim_dimensions_value}</p>
             </div>
-          </div>
-          <div className="relative w-full flex justify-center">
-            <img src="/ZG_261_SINGLE.webp" alt="ZG-261 Single Cabinet" className="w-full max-w-md object-contain" />
+            <div>
+              <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>{b.dim_weight_label}</p>
+              <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>{b.dim_weight_value}</p>
+            </div>
+            <div className="col-span-1 sm:col-span-2">
+              <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>{b.dim_enclosure_label}</p>
+              <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>{b.dim_enclosure_value}</p>
+            </div>
           </div>
         </div>
       </section>
@@ -179,25 +174,25 @@ const Battery = () => {
         </div>
       </section>
 
-      {/* Section 5: High-Density Specification Grid */}
       {/* Section 5: Safety & Containment Architecture */}
-      <section className="w-full py-24 md:py-32 bg-white flex justify-center border-t border-gray-200">
+      <section className="w-full py-24 md:py-32 bg-[#000000] border-none flex justify-center">
         <div className="max-w-7xl w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left: Open Cabinet Image */}
-          <div className="relative w-full flex justify-center lg:justify-start">
-            <img src="/ZG_261_INTERNALS.webp" alt="ZG-261 Open Cabinet Architecture" className="w-full max-w-lg object-contain drop-shadow-2xl rounded-sm" />
+          {/* Left: Open Cabinet Image with vignette */}
+          <div className="relative w-full flex justify-center lg:justify-start max-w-3xl">
+            <img src="/ZG_261_INTERNALS.webp" alt="ZG-261 Open Cabinet Architecture" className="w-full object-contain relative z-0" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,#000000_100%)] z-10 pointer-events-none"></div>
           </div>
           {/* Right: Safety Protocol Text */}
           <div className="flex flex-col items-start">
             <h2
-              className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
-              style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
+              className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6"
+              style={{ fontFamily: "var(--font-heading)" }}
             >
               {b.safety_section_title}
             </h2>
             <p
               className="text-lg leading-relaxed mb-10"
-              style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}
+              style={{ fontFamily: "var(--font-body)", color: "#9ca3af" }}
             >
               {b.safety_section_body}
             </p>
@@ -208,12 +203,12 @@ const Battery = () => {
                 { tier: "TIER 3", title: b.tier3_title, desc: b.tier3_desc },
               ].map((item) => (
                 <div key={item.tier} className="flex items-start gap-4">
-                  <div className="mt-1 shrink-0 bg-gray-100 text-[#2c5cc5] text-xs font-bold px-3 py-1 rounded-sm uppercase tracking-wider border border-gray-200">
+                  <div className="mt-1 shrink-0 bg-gray-900 text-[#2c5cc5] text-xs font-bold px-3 py-1 rounded-sm uppercase tracking-wider border border-gray-800">
                     {item.tier}
                   </div>
                   <div className="flex flex-col">
-                    <span className="font-bold mb-1" style={{ color: "#111827" }}>{item.title}</span>
-                    <span style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>{item.desc}</span>
+                    <span className="font-bold text-white mb-1">{item.title}</span>
+                    <span style={{ fontFamily: "var(--font-body)", color: "#9ca3af" }}>{item.desc}</span>
                   </div>
                 </div>
               ))}
