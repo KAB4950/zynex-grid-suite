@@ -27,10 +27,10 @@ const Header = () => {
   const langToggle = (
     <button
       onClick={() => setLanguage(language === "en" ? "da" : "en")}
-      className="text-sm font-semibold tracking-wider text-muted-foreground hover:text-foreground transition-colors uppercase"
+      className="flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-[#2c5cc5] transition-colors cursor-pointer"
       style={{ fontFamily: "var(--font-body)" }}
     >
-      {language === "en" ? "DA" : "EN"}
+      {language === "en" ? "🇩🇰 DA" : "🇬🇧 EN"}
     </button>
   );
 
