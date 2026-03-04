@@ -12,11 +12,11 @@ const Index = () => {
   return (
     <>
       {/* Hero */}
-      <section className="w-full relative flex flex-col items-center justify-start bg-white -mt-16">
-        {/* Typography in the white gap */}
-        <div className="relative z-10 flex flex-col items-center pt-28">
+      <section className="relative w-full pt-32 pb-0 flex flex-col items-center bg-white overflow-hidden -mt-16">
+        {/* Typography & Button */}
+        <div className="relative z-20 flex flex-col items-center text-center mt-4">
           <h1
-            className="text-7xl md:text-9xl font-bold tracking-tighter bg-gradient-to-br from-[#1a1a1a] to-[#737373] bg-clip-text text-transparent pt-10"
+            className="text-7xl md:text-9xl font-bold tracking-tighter bg-gradient-to-br from-[#1a1a1a] to-[#737373] bg-clip-text text-transparent"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             {t.hero.title}
@@ -41,10 +41,10 @@ const Index = () => {
           </Link>
         </div>
 
-        {/* Image container pushed down */}
-        <div className="w-full h-[80vh] mt-[3vh] relative bg-[url('/FRONT_HERO.webp')] bg-cover bg-center bg-no-repeat">
-          {/* Scrim inside image container */}
-          <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-white via-white/40 to-transparent pointer-events-none" />
+        {/* Image container pulled up */}
+        <div className="relative w-full h-[75vh] -mt-16 z-10">
+          <div className="bg-[url('/FRONT_HERO.webp')] bg-cover bg-top bg-no-repeat w-full h-full" />
+          <div className="absolute top-0 left-0 w-full h-[25%] bg-gradient-to-b from-white via-white/70 to-transparent pointer-events-none" />
         </div>
       </section>
 
