@@ -8,10 +8,11 @@
     "insights": "Insights"
   },
   "hero": {
-    "title": "Intelligent Grid-Scale Energy Storage.",
-    "subtitle": "Navigate volatile European energy markets with high-density Commercial & Industrial BESS infrastructure. Mitigate rising tariffs, secure operations with Island Mode backup, and generate risk-mitigated returns.",
-    "cta": "Explore Our Infrastructure",
-    "placeholder": "[3D Twinmotion Render Placeholder: C&I BESS Installation]"
+    "title": "ZG-261",
+    "specs": "261kWh / 125kW",
+    "subtitle": "Turnkey battery energy storage for commercial enterprises.",
+    "cta_primary": "Learn more",
+    "cta_secondary": "Contact Sales"
   },
   "value": {
     "title": "Core Operational Value",
