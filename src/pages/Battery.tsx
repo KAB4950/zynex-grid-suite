@@ -19,40 +19,40 @@ const Battery = () => {
   return (
     <>
       {/* Section 1: ZG-261 Product Hero */}
-      <section className="relative w-full h-screen min-h-[800px] flex items-center justify-start overflow-hidden">
+      <section className="relative w-full h-screen min-h-[800px] flex items-center justify-start overflow-hidden -mt-[60px]">
         {/* Background */}
         <div className="absolute inset-0 bg-[url('/ZG_261_PARK.webp')] bg-cover bg-center bg-no-repeat z-0" />
         {/* Left-side scrim */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 from-10% via-black/50 via-35% to-transparent to-50% z-10 w-full md:w-2/3" />
         {/* Text */}
         <div className="relative z-20 flex flex-col items-start px-6 md:px-16 lg:px-24 max-w-4xl pt-20">
           <span
             className="text-sm md:text-base tracking-[0.2em] font-bold uppercase mb-4"
             style={{ fontFamily: "var(--font-body)", color: "#d1d5db" }}
           >
-            ZYNEXGROUP COMMERCIAL ENERGY INFRASTRUCTURE
+            {b.hero_eyebrow}
           </span>
           <h1
             className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-white"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            125kW / 261kWh Battery Energy Storage System.
+            {b.hero_title}
           </h1>
           <p
             className="text-lg md:text-xl leading-relaxed max-w-2xl mb-10"
             style={{ fontFamily: "var(--font-body)", color: "#e5e7eb" }}
           >
-            Liquid-cooled energy storage for industrial grid continuity, peak load management, and power quality regulation.
+            {b.hero_subtitle}
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <Button asChild className="bg-[#2c5cc5] text-white px-8 py-4 h-auto text-sm font-semibold rounded-full hover:bg-blue-700 transition-colors shadow-lg border-none">
-              <Link to="/contact">Request Technical Consultation</Link>
+              <Link to="/contact">{b.hero_cta_primary}</Link>
             </Button>
             <button
               onClick={() => document.getElementById('specs-section')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-transparent border-2 border-white/70 text-white px-8 py-4 text-sm font-semibold rounded-full hover:bg-white hover:text-black transition-all duration-300"
             >
-              View Specifications
+              {b.hero_cta_secondary}
             </button>
           </div>
         </div>
@@ -67,29 +67,29 @@ const Battery = () => {
               className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
               style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
             >
-              Grid failure response and load transition.
+              {b.sts_title}
             </h2>
             <p
               className="text-lg leading-relaxed mb-10"
               style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}
             >
-              The system is equipped with a Static Transfer Switch (STS). Upon detecting grid voltage anomalies or total failure, the system transitions to battery power in milliseconds, preventing operational disruption for connected machinery and IT infrastructure.
+              {b.sts_body}
             </p>
             <div className="border-l-4 border-[#2c5cc5] pl-6 flex flex-col gap-6">
               <div>
                 <p className="text-sm uppercase tracking-wider font-bold mb-1" style={{ color: "#111827" }}>
-                  Overload Capacity
+                  {b.sts_overload_title}
                 </p>
                 <p className="text-base" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>
-                  120% rating to absorb inrush currents during machinery restarts.
+                  {b.sts_overload_desc}
                 </p>
               </div>
               <div>
                 <p className="text-sm uppercase tracking-wider font-bold mb-1" style={{ color: "#111827" }}>
-                  Load Balancing
+                  {b.sts_load_title}
                 </p>
                 <p className="text-base" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>
-                  Three-phase, four-leg dynamic balancing adapts to variable grid environments (380/400V ± 15%).
+                  {b.sts_load_desc}
                 </p>
               </div>
             </div>
@@ -113,26 +113,26 @@ const Battery = () => {
               className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
               style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
             >
-              261kWh capacity within a 1.45m² footprint.
+              {b.dim_title}
             </h2>
             <p
               className="text-lg leading-relaxed mb-10"
               style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}
             >
-              The cabinet utilizes high-density Lithium Iron Phosphate (LFP) 314Ah cells. The physical architecture is designed to minimize required floor space in industrial facilities. Multiple units can be installed adjacent to one another.
+              {b.dim_body}
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full border-t border-gray-200 pt-8">
               <div>
-                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>Dimensions</p>
-                <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>989mm (W) × 2471.5mm (H) × 1465mm (D)</p>
+                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>{b.dim_dimensions_label}</p>
+                <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>{b.dim_dimensions_value}</p>
               </div>
               <div>
-                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>Weight</p>
-                <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>2.8 Metric Tons</p>
+                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>{b.dim_weight_label}</p>
+                <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>{b.dim_weight_value}</p>
               </div>
               <div className="col-span-1 sm:col-span-2">
-                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>Enclosure Rating</p>
-                <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>IP54, C4 Corrosion Resistance standard.</p>
+                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>{b.dim_enclosure_label}</p>
+                <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>{b.dim_enclosure_value}</p>
               </div>
             </div>
           </div>
@@ -157,30 +157,30 @@ const Battery = () => {
                 className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-4"
                 style={{ fontFamily: "var(--font-heading)" }}
               >
-                Closed-loop liquid cooling infrastructure.
+                {b.thermal_title}
               </h2>
               <p
                 className="text-base md:text-lg leading-relaxed"
                 style={{ fontFamily: "var(--font-body)", color: "#9ca3af" }}
               >
-                Operating temperatures dictate cell degradation rates. This system employs liquid cooling to maintain internal DC-side temperature differences within a ±1.5°C margin.
+                {b.thermal_body}
               </p>
             </div>
             {/* Right: Operational Parameters */}
             <div className="md:border-l md:border-white/10 md:pl-12 flex flex-col gap-6">
               <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: "#6b7280" }}>
-                OPERATIONAL PARAMETERS
+                {b.thermal_params_header}
               </p>
               <div className="flex items-start">
                 <span className="w-2 h-2 rounded-full bg-[#2c5cc5] mt-2 mr-3 shrink-0" />
                 <span className="text-white font-medium leading-snug" style={{ fontFamily: "var(--font-body)" }}>
-                  Functions in ambient temperatures ranging from -30°C to 50°C.
+                  {b.thermal_param1}
                 </span>
               </div>
               <div className="flex items-start">
                 <span className="w-2 h-2 rounded-full bg-[#2c5cc5] mt-2 mr-3 shrink-0" />
                 <span className="text-white font-medium leading-snug" style={{ fontFamily: "var(--font-body)" }}>
-                  Calculated for a 5-year maintenance-free lifecycle under standard load profiles.
+                  {b.thermal_param2}
                 </span>
               </div>
             </div>
@@ -202,19 +202,19 @@ const Battery = () => {
               className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
               style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
             >
-              Three-tier safety and containment protocol.
+              {b.safety_section_title}
             </h2>
             <p
               className="text-lg leading-relaxed mb-10"
               style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}
             >
-              The system utilizes independent layers of hardware and software safety mechanisms to detect thermal events and contain them at the component level.
+              {b.safety_section_body}
             </p>
             <div className="flex flex-col gap-8 w-full">
               {[
-                { tier: "TIER 1", title: "Detection", desc: "Multi-level temperature sensors provide millisecond-level data reporting to the central controller." },
-                { tier: "TIER 2", title: "Suppression", desc: "PACK-level aerosol and water fire suppression systems, backed by multi-stage electrical fusing." },
-                { tier: "TIER 3", title: "Containment", desc: "The external cabinet features long-fiber alumina composite insulation, rated to withstand internal temperatures up to 1600°C." },
+                { tier: "TIER 1", title: b.tier1_title, desc: b.tier1_desc },
+                { tier: "TIER 2", title: b.tier2_title, desc: b.tier2_desc },
+                { tier: "TIER 3", title: b.tier3_title, desc: b.tier3_desc },
               ].map((item) => (
                 <div key={item.tier} className="flex items-start gap-4">
                   <div className="mt-1 shrink-0 bg-gray-100 text-[#2c5cc5] text-xs font-bold px-3 py-1 rounded-sm uppercase tracking-wider border border-gray-200">
