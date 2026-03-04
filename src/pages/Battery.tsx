@@ -105,6 +105,44 @@ const Battery = () => {
         </div>
       </section>
 
+      {/* Section 3: Physical Dimensions & Energy Density */}
+      <section className="w-full py-24 md:py-32 bg-white flex justify-center">
+        <div className="max-w-7xl w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="flex flex-col items-start">
+            <h2
+              className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
+              style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
+            >
+              261kWh capacity within a 1.45m² footprint.
+            </h2>
+            <p
+              className="text-lg leading-relaxed mb-10"
+              style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}
+            >
+              The cabinet utilizes high-density Lithium Iron Phosphate (LFP) 314Ah cells. The physical architecture is designed to minimize required floor space in industrial facilities. Multiple units can be installed adjacent to one another.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full border-t border-gray-200 pt-8">
+              <div>
+                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>Dimensions</p>
+                <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>989mm (W) × 2471.5mm (H) × 1465mm (D)</p>
+              </div>
+              <div>
+                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>Weight</p>
+                <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>2.8 Metric Tons</p>
+              </div>
+              <div className="col-span-1 sm:col-span-2">
+                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: "#111827" }}>Enclosure Rating</p>
+                <p className="text-base mt-1" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>IP54, C4 Corrosion Resistance standard.</p>
+              </div>
+            </div>
+          </div>
+          <div className="relative w-full flex justify-center">
+            <img src="/ZG_261_SINGLE.webp" alt="ZG-261 Single Cabinet" className="w-full max-w-md object-contain" />
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4: High-Density Specification Grid */}
       <section id="specs-section" className="py-24 px-8 md:px-16 bg-background">
         <div className="max-w-6xl mx-auto">
           <h2
