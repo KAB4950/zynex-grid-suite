@@ -58,7 +58,53 @@ const Battery = () => {
         </div>
       </section>
 
-      {/* Section 2: High-Density Specification Grid */}
+      {/* Section 2: STS & Grid Continuity */}
+      <section className="w-full py-24 md:py-32 bg-gray-50 flex justify-center border-b border-gray-200">
+        <div className="max-w-7xl w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left: Technical Copy */}
+          <div className="flex flex-col items-start">
+            <h2
+              className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
+              style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
+            >
+              Grid failure response and load transition.
+            </h2>
+            <p
+              className="text-lg leading-relaxed mb-10"
+              style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}
+            >
+              The system is equipped with a Static Transfer Switch (STS). Upon detecting grid voltage anomalies or total failure, the system transitions to battery power in milliseconds, preventing operational disruption for connected machinery and IT infrastructure.
+            </p>
+            <div className="border-l-4 border-[#2c5cc5] pl-6 flex flex-col gap-6">
+              <div>
+                <p className="text-sm uppercase tracking-wider font-bold mb-1" style={{ color: "#111827" }}>
+                  Overload Capacity
+                </p>
+                <p className="text-base" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>
+                  120% rating to absorb inrush currents during machinery restarts.
+                </p>
+              </div>
+              <div>
+                <p className="text-sm uppercase tracking-wider font-bold mb-1" style={{ color: "#111827" }}>
+                  Load Balancing
+                </p>
+                <p className="text-base" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>
+                  Three-phase, four-leg dynamic balancing adapts to variable grid environments (380/400V ± 15%).
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* Right: STS Image */}
+          <div className="relative w-full flex justify-center lg:justify-end">
+            <img
+              src="/ZG_261_STS.webp"
+              alt="ZG-261 Static Transfer Switch"
+              className="w-full max-w-lg object-contain drop-shadow-2xl rounded-sm"
+            />
+          </div>
+        </div>
+      </section>
+
       <section id="specs-section" className="py-24 px-8 md:px-16 bg-background">
         <div className="max-w-6xl mx-auto">
           <h2
