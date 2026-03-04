@@ -231,7 +231,43 @@ const Battery = () => {
         </div>
       </section>
 
-      {/* Section 6: High-Density Specification Grid */}
+      {/* Section 6: System Control & Diagnostics */}
+      <section className="w-full py-24 md:py-32 bg-gray-50 flex justify-center border-t border-gray-200">
+        <div className="max-w-5xl w-full px-6 md:px-12 flex flex-col items-center text-center">
+          <h2
+            className="text-3xl md:text-5xl font-bold tracking-tight mb-6 max-w-3xl"
+            style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}
+          >
+            {b.control_title}
+          </h2>
+          <p
+            className="text-lg md:text-xl leading-relaxed mb-16 max-w-3xl"
+            style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}
+          >
+            {b.control_body}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left w-full max-w-4xl">
+            <div className="flex flex-col border-t-2 border-[#2c5cc5] pt-6">
+              <p className="text-sm font-bold uppercase tracking-widest mb-3" style={{ color: "#111827" }}>
+                {b.control_cap1_title}
+              </p>
+              <p className="text-base leading-relaxed" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>
+                {b.control_cap1_desc}
+              </p>
+            </div>
+            <div className="flex flex-col border-t-2 border-[#2c5cc5] pt-6">
+              <p className="text-sm font-bold uppercase tracking-widest mb-3" style={{ color: "#111827" }}>
+                {b.control_cap2_title}
+              </p>
+              <p className="text-base leading-relaxed" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>
+                {b.control_cap2_desc}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 7: High-Density Specification Grid */}
       <section id="specs-section" className="py-24 px-8 md:px-16 bg-background">
         <div className="max-w-6xl mx-auto">
           <h2

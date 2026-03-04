@@ -117,7 +117,13 @@
     "safety_point4": "Intelligens: Millisekundniveau enkeltpunktsfejlgendannelse med fuld nodeautonomi.",
     "safety_placeholder": "[Diagram: ZG-MOD-52 Termisk Styringssystem]",
     "cta_title": "Anmod om Fuld Teknisk Dokumentation",
-    "cta_button": "Kontakt Ingeniørafdelingen"
+    "cta_button": "Kontakt Ingeniørafdelingen",
+    "control_title": "Autonom fejlretning og netværksudvidelse.",
+    "control_body": "Operativsystemet håndterer belastningsfordeling og diagnostiske protokoller uden behov for manuelt tilsyn. Fejl isoleres på enkeltpunktsniveau med en aktiv genopretningstid på 0 sekunder.",
+    "control_cap1_title": "Parallel Drift",
+    "control_cap1_desc": "Understøtter op til 20 nettilsluttede enheder, der fungerer i et decentraliseret, autonomt netværk.",
+    "control_cap2_title": "Vedligeholdelse",
+    "control_cap2_desc": "Firmware- og strategiopdateringer udføres via Over-The-Air (OTA) protokoller med breakpoint-recovery."
   },
   "market_page": {
     "hero_title": "Algoritmisk Grid Orkestrering.",
