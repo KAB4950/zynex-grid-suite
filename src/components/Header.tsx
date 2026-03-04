@@ -18,7 +18,7 @@ const Header = () => {
 
   const navLinks = [
     { to: "/", label: t.nav.home },
-    { to: "/battery", label: t.nav.battery },
+    { to: "/battery", label: "ZG-261" },
     { to: "/the-market", label: t.nav.market },
     { to: "/insights", label: (t.nav as any).insights || "Insights" },
     { to: "/about-us", label: t.nav.about },
@@ -53,7 +53,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
@@ -68,7 +68,7 @@ const Header = () => {
         </nav>
 
         {/* Desktop Right */}
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-4 lg:flex">
           {langToggle}
           <Button asChild size="sm" className="rounded-[4px] text-xs tracking-wider uppercase">
             <Link to="/contact">{t.nav.contact}</Link>
@@ -76,7 +76,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className="md:hidden flex items-center gap-3">
+        <div className="lg:hidden flex items-center gap-3">
           {langToggle}
           <Sheet>
             <SheetTrigger asChild>
