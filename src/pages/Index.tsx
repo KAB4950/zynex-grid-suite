@@ -16,7 +16,7 @@ const Index = () => {
         {/* Typography & Button */}
         <div className="relative z-20 flex flex-col items-center text-center mt-4">
           <h1
-            className="text-7xl md:text-9xl font-bold tracking-tighter bg-gradient-to-br from-[#1a1a1a] to-[#737373] bg-clip-text text-transparent"
+            className="text-7xl md:text-9xl font-bold tracking-tighter bg-gradient-to-r from-[#4A7DE3] to-[#1E3A8A] bg-clip-text text-transparent pt-10 z-10"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             {t.hero.title}
@@ -28,7 +28,7 @@ const Index = () => {
             {t.hero.specs}
           </h2>
           <p
-            className="text-lg md:text-xl text-gray-800 font-medium max-w-xl text-center mb-4"
+            className="text-lg md:text-xl text-gray-800 font-medium max-w-3xl lg:whitespace-nowrap text-center mb-4"
             style={{ fontFamily: "var(--font-body)" }}
           >
             {t.hero.subtitle}
@@ -42,7 +42,7 @@ const Index = () => {
         </div>
 
         {/* Image container pulled up */}
-        <div className="relative w-full h-[75vh] -mt-16 z-10">
+        <div className="relative w-full h-[75vh] -mt-28 z-10">
           <div className="bg-[url('/FRONT_HERO.webp')] bg-cover bg-top bg-no-repeat w-full h-full" />
           <div className="absolute top-0 left-0 w-full h-[25%] bg-gradient-to-b from-white via-white/70 to-transparent pointer-events-none" />
         </div>
