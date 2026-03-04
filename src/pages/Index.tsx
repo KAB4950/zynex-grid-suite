@@ -43,7 +43,7 @@ const Index = () => {
 
         {/* Image container pulled up */}
         <div className="relative w-full h-[75vh] -mt-28 z-10">
-          <div className="bg-[url('/FRONT_HERO.webp')] bg-cover bg-top bg-no-repeat w-full h-full" />
+          <div className="bg-[url('/FRONT_HERO2.webp')] bg-cover bg-top bg-no-repeat w-full h-full" />
           <div className="absolute top-0 left-0 w-full h-[25%] bg-gradient-to-b from-white via-white/70 to-transparent pointer-events-none" />
         </div>
       </section>

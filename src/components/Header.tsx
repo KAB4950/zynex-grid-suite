@@ -44,12 +44,8 @@ const Header = () => {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-        <Link
-          to="/"
-          className="text-lg tracking-[0.2em] font-semibold text-foreground"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
-          ZYNEX GROUP
+        <Link to="/">
+          <img src="/ZYNEXGROUP_LOGO.svg" alt="ZynexGroup Logo" className="h-6 md:h-8 w-auto cursor-pointer" />
         </Link>
 
         {/* Desktop Nav */}
