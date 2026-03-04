@@ -12,7 +12,7 @@ const Contact = () => {
     setFormData((f) => ({ ...f, [field]: e.target.value }));
 
   const inputClass =
-    "w-full p-4 border border-gray-300 rounded-sm bg-gray-50 text-gray-900 focus:outline-none focus:border-[#2c5cc5] focus:ring-1 focus:ring-[#2c5cc5] transition-colors";
+    "w-full p-4 border border-white/20 rounded-sm bg-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-[#5b8def] focus:ring-1 focus:ring-[#5b8def] transition-colors";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -74,7 +74,7 @@ const Contact = () => {
           </div>
 
           {/* Google Maps Embed */}
-          <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+          <div className="w-full rounded-2xl overflow-hidden shadow-lg border border-gray-200" style={{ height: '400px' }}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.5!2d10.203!3d56.152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c4f4a2b000001%3A0x1!2s%C3%85bogade%2015%2C%208200%20Aarhus%2C%20Denmark!5e0!3m2!1sen!2sdk!4v1700000000000"
               width="100%"
@@ -89,24 +89,24 @@ const Contact = () => {
         </div>
 
         {/* Right Column */}
-        <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100 w-full">
+        <div className="bg-gradient-to-b from-[#1E3A8A] to-[#0F172A] p-8 md:p-12 rounded-2xl shadow-xl border border-white/10 w-full h-fit">
           {isSuccess ? (
             <div className="flex items-center justify-center min-h-[400px]">
-              <p className="text-center text-green-700 font-medium text-lg" style={{ fontFamily: "var(--font-body)" }}>
+              <p className="text-center text-green-300 font-medium text-lg" style={{ fontFamily: "var(--font-body)" }}>
                 {cp.success_message}
               </p>
             </div>
           ) : (
             <>
               <h2
-                className="text-2xl font-semibold mb-8 text-[#1a1a1a]"
+                className="text-2xl font-semibold mb-8 text-white"
                 style={{ fontFamily: "var(--font-heading)" }}
               >
                 {cp.form_title}
               </h2>
               <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">{cp.label_name} *</label>
+                  <label className="block text-sm font-semibold text-gray-300 mb-2">{cp.label_name} *</label>
                   <input
                     type="text"
                     required
@@ -117,7 +117,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">{cp.label_company}</label>
+                  <label className="block text-sm font-semibold text-gray-300 mb-2">{cp.label_company}</label>
                   <input
                     type="text"
                     className={inputClass}
@@ -127,7 +127,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">{cp.email_form_label} *</label>
+                  <label className="block text-sm font-semibold text-gray-300 mb-2">{cp.email_form_label} *</label>
                   <input
                     type="email"
                     required
@@ -138,7 +138,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">{cp.label_message} *</label>
+                  <label className="block text-sm font-semibold text-gray-300 mb-2">{cp.label_message} *</label>
                   <textarea
                     required
                     rows={5}
@@ -151,7 +151,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#2c5cc5] text-white px-8 py-4 text-sm font-semibold rounded-sm hover:bg-blue-700 transition-colors shadow-md cursor-pointer disabled:opacity-60 uppercase tracking-wider"
+                  className="w-full bg-[#2c5cc5] text-white px-8 py-4 text-sm font-semibold rounded-md hover:bg-blue-700 transition-colors shadow-md cursor-pointer disabled:opacity-60 uppercase tracking-wider"
                 >
                   {isSubmitting ? cp.sending : cp.submit}
                 </button>
