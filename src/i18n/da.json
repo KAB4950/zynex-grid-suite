@@ -14,6 +14,12 @@
     "cta_primary": "Læs mere",
     "cta_secondary": "Kontakt Salg"
   },
+  "hero2": {
+    "headline": "End-to-End Infrastruktur.",
+    "subheadline": "Vi håndterer kompleksiteten. Du høster afkastet.",
+    "paragraph": "Som specialiseret C&I-projektudvikler styrer ZynexGroup hele livscyklussen af dit energilagringsaktiv. Vi navigerer nettilslutningsgodkendelser, anlægsteknik og hardwareinstallation for at levere fuldt operationel, nøglefærdig infrastruktur.",
+    "cta": "Om ZynexGroup"
+  },
   "value": {
     "title": "Kerne Operationel Værdi",
     "subtitle": "Algoritmisk styring af C&I batteriinfrastruktur giver fire distinkte finansielle og operationelle fordele.",
