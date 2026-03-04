@@ -144,7 +144,17 @@
     "table_op_temp": "Operating Temperature",
     "table_op_temp_value": "-30°C to 50°C (Derating above 45°C)",
     "table_cooling": "Cooling Method",
-    "table_cooling_value": "Liquid Cooling"
+    "table_cooling_value": "Liquid Cooling",
+    "contact_title": "Technical Inquiry and Procurement.",
+    "contact_body": "Contact our engineering team for site-specific integration analysis and detailed pricing structures.",
+    "contact_name": "Name",
+    "contact_company": "Company",
+    "contact_email": "Work Email",
+    "contact_details": "Project Details / Site Requirements",
+    "contact_submit": "Contact Engineering",
+    "contact_download": "Download Datasheet PDF",
+    "contact_footer1": "Component-Level Data Traceability",
+    "contact_footer2": "ESG Compliant Manufacturing"
   },
   "market_page": {
     "hero_title": "Algorithmic Grid Orchestration.",
