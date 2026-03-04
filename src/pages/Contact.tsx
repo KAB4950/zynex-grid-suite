@@ -1,26 +1,51 @@
 import { useTranslation } from "@/i18n/LanguageContext";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Contact = () => {
   const { t } = useTranslation();
   const cp = (t as any).contact_page;
-  const [form, setForm] = useState({ name: "", company: "", grid: "", inquiry: "", details: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", company: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
-  const update = (field: string) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
-    setForm((f) => ({ ...f, [field]: e.target.value }));
+  const update = (field: string) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+    setFormData((f) => ({ ...f, [field]: e.target.value }));
 
-  const labelClass = "block text-sm font-semibold text-gray-300 mb-2 uppercase tracking-wide";
   const inputClass =
-    "w-full rounded-none border border-slate-700 bg-slate-800/50 p-4 text-white font-opensans focus:outline-none focus:border-[#8BAEE0] focus:ring-1 focus:ring-[#8BAEE0] transition-all placeholder-gray-500";
+    "w-full p-4 border border-gray-300 rounded-sm bg-gray-50 text-gray-900 focus:outline-none focus:border-[#2c5cc5] focus:ring-1 focus:ring-[#2c5cc5] transition-colors";
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    try {
+      const res = await fetch("https://api.staticforms.xyz/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          accessKey: "sf_62gha3d8nl6890e290ljk4mg",
+          name: formData.name,
+          email: formData.email,
+          subject: `Contact from ${formData.company || "N/A"}`,
+          message: formData.message,
+        }),
+      });
+      if (res.ok) {
+        setIsSuccess(true);
+      }
+    } catch {
+      // silent fail
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
-    <div className="min-h-[85vh] pt-32 pb-24 px-8 md:px-16 flex items-start bg-white max-w-7xl mx-auto">
-      <div className="grid lg:grid-cols-2 gap-16 w-full">
+    <div className="min-h-screen py-24 md:py-32 bg-gray-50 flex justify-center">
+      <div className="max-w-7xl w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16">
         {/* Left Column */}
-        <div>
+        <div className="flex flex-col items-start">
           <h1
-            className="text-5xl md:text-7xl font-semibold tracking-tight mb-8 bg-gradient-to-r from-[#8BAEE0] to-[#2c5cc5] bg-clip-text text-transparent"
+            className="text-4xl md:text-5xl font-bold tracking-tight text-[#1a1a1a] mb-6"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             {cp.hero_title}
@@ -32,114 +57,107 @@ const Contact = () => {
             {cp.hero_subtitle}
           </p>
 
-          {/* Contact Details */}
-          <div>
-            <h3 className="text-sm font-semibold text-[#2c5cc5] uppercase tracking-wider mb-2">
-              {cp.hq_label}
-            </h3>
-            <p
-              className="whitespace-pre-line text-[#494949] mb-8 border-l-2 border-gray-200 pl-4"
-              style={{ fontFamily: "var(--font-body)" }}
-            >
-              {cp.hq_address}
-            </p>
-
-            <h3 className="text-sm font-semibold text-[#2c5cc5] uppercase tracking-wider mb-2">
-              {cp.eng_label}
-            </h3>
-            <p
-              className="whitespace-pre-line text-[#494949] mb-8 border-l-2 border-gray-200 pl-4"
-              style={{ fontFamily: "var(--font-body)" }}
-            >
-              {cp.eng_contact}
-            </p>
+          {/* Contact Details Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full mb-12">
+            <div>
+              <h3 className="text-sm font-bold text-gray-900 uppercase tracking-widest mb-2">{cp.hq_label}</h3>
+              <p className="text-gray-600" style={{ fontFamily: "var(--font-body)" }}>{cp.hq_address}</p>
+            </div>
+            <div>
+              <h3 className="text-sm font-bold text-gray-900 uppercase tracking-widest mb-2">{cp.email_label}</h3>
+              <a href="mailto:kb@zynexgroup.com" className="text-[#2c5cc5] hover:underline">kb@zynexgroup.com</a>
+            </div>
+            <div>
+              <h3 className="text-sm font-bold text-gray-900 uppercase tracking-widest mb-2">{cp.phone_label}</h3>
+              <p className="text-gray-600" style={{ fontFamily: "var(--font-body)" }}>+45 40 50 23 76</p>
+            </div>
           </div>
 
-          {/* Map Placeholder */}
-          <div className="w-full aspect-video bg-[#F6F6F6] border border-gray-200 flex items-center justify-center text-gray-400 rounded-none">
-            {cp.map_placeholder}
+          {/* Google Maps Embed */}
+          <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.5!2d10.203!3d56.152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c4f4a2b000001%3A0x1!2s%C3%85bogade%2015%2C%208200%20Aarhus%2C%20Denmark!5e0!3m2!1sen!2sdk!4v1700000000000"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="ZynexGroup HQ"
+            />
           </div>
         </div>
 
-        {/* Right Column: Deep Sea Form */}
-        <div className="bg-gradient-to-b from-[#1E3A8A] to-[#0F172A] p-8 md:p-12 shadow-2xl rounded-none text-white">
-          <h2
-            className="text-2xl font-semibold mb-8 text-white"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
-            {cp.form_title}
-          </h2>
-
-          <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-            <div>
-              <label className={labelClass}>{cp.label_name}</label>
-              <input
-                type="text"
-                className={inputClass}
-                value={form.name}
-                onChange={update("name")}
-                placeholder={cp.name_placeholder}
-              />
+        {/* Right Column */}
+        <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100 w-full">
+          {isSuccess ? (
+            <div className="flex items-center justify-center min-h-[400px]">
+              <p className="text-center text-green-700 font-medium text-lg" style={{ fontFamily: "var(--font-body)" }}>
+                {cp.success_message}
+              </p>
             </div>
-
-            <div>
-              <label className={labelClass}>{cp.label_company}</label>
-              <input
-                type="text"
-                className={inputClass}
-                value={form.company}
-                onChange={update("company")}
-                placeholder={cp.company_placeholder}
-              />
-            </div>
-
-            <div>
-              <label className={labelClass}>{cp.label_grid}</label>
-              <select
-                className={`${inputClass} bg-slate-800`}
-                value={form.grid}
-                onChange={update("grid")}
+          ) : (
+            <>
+              <h2
+                className="text-2xl font-semibold mb-8 text-[#1a1a1a]"
+                style={{ fontFamily: "var(--font-heading)" }}
               >
-                <option value="">{cp.grid_placeholder}</option>
-                <option value="under1">{cp.grid_opt1}</option>
-                <option value="1to5">{cp.grid_opt2}</option>
-                <option value="over5">{cp.grid_opt3}</option>
-              </select>
-            </div>
-
-            <div>
-              <label className={labelClass}>{cp.label_inquiry}</label>
-              <select
-                className={`${inputClass} bg-slate-800`}
-                value={form.inquiry}
-                onChange={update("inquiry")}
-              >
-                <option value="">{cp.inquiry_placeholder}</option>
-                <option value="hardware">{cp.inquiry_opt1}</option>
-                <option value="orchestration">{cp.inquiry_opt2}</option>
-                <option value="prequalification">{cp.inquiry_opt3}</option>
-                <option value="other">{cp.inquiry_opt4}</option>
-              </select>
-            </div>
-
-            <div>
-              <label className={labelClass}>{cp.label_details}</label>
-              <textarea
-                rows={4}
-                className={inputClass}
-                value={form.details}
-                onChange={update("details")}
-                placeholder={cp.details_placeholder}
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-[#266d51] text-white rounded-none px-8 py-4 mt-8 hover:bg-green-700 transition-colors uppercase tracking-wider text-sm font-semibold"
-            >
-              {cp.submit}
-            </button>
-          </form>
+                {cp.form_title}
+              </h2>
+              <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">{cp.label_name} *</label>
+                  <input
+                    type="text"
+                    required
+                    className={inputClass}
+                    value={formData.name}
+                    onChange={update("name")}
+                    placeholder={cp.name_placeholder}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">{cp.label_company}</label>
+                  <input
+                    type="text"
+                    className={inputClass}
+                    value={formData.company}
+                    onChange={update("company")}
+                    placeholder={cp.company_placeholder}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">{cp.email_form_label} *</label>
+                  <input
+                    type="email"
+                    required
+                    className={inputClass}
+                    value={formData.email}
+                    onChange={update("email")}
+                    placeholder={cp.email_placeholder}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">{cp.label_message} *</label>
+                  <textarea
+                    required
+                    rows={5}
+                    className={`${inputClass} min-h-[150px]`}
+                    value={formData.message}
+                    onChange={update("message")}
+                    placeholder={cp.message_placeholder}
+                  />
+                </div>
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full bg-[#2c5cc5] text-white px-8 py-4 text-sm font-semibold rounded-sm hover:bg-blue-700 transition-colors shadow-md cursor-pointer disabled:opacity-60 uppercase tracking-wider"
+                >
+                  {isSubmitting ? cp.sending : cp.submit}
+                </button>
+              </form>
+            </>
+          )}
         </div>
       </div>
     </div>
