@@ -117,7 +117,13 @@
     "safety_point4": "Intelligence: Millisecond-level single-point fault recovery with full-node autonomy.",
     "safety_placeholder": "[Diagram: ZG-MOD-52 Thermal Management System]",
     "cta_title": "Request Full Technical Documentation",
-    "cta_button": "Contact Engineering"
+    "cta_button": "Contact Engineering",
+    "control_title": "Autonomous fault recovery and network expansion.",
+    "control_body": "The operating system manages load balancing and diagnostic protocols without requiring manual oversight. Faults are isolated at the single-point level with an active recovery time of 0 seconds.",
+    "control_cap1_title": "Parallel Operation",
+    "control_cap1_desc": "Supports up to 20 grid-tied units operating in a decentralized, autonomous network.",
+    "control_cap2_title": "Maintenance",
+    "control_cap2_desc": "Firmware and strategy updates are executed via Over-The-Air (OTA) protocols with breakpoint recovery."
   },
   "market_page": {
     "hero_title": "Algorithmic Grid Orchestration.",
