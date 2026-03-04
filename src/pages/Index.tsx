@@ -49,11 +49,11 @@ const Index = () => {
       </section>
 
       {/* Hero 2: End-to-End Infrastructure */}
-      <section className="relative w-full min-h-[85vh] bg-black border-t-[20px] border-white flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative w-full min-h-[85vh] bg-black border-t-[15px] border-white flex flex-col items-center justify-center overflow-hidden">
         {/* Earth background */}
         <div className="absolute inset-0 z-0 bg-[url('/FRONT_EARTH.webp')] bg-cover bg-center bg-no-repeat opacity-100" />
         {/* Typography */}
-        <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-4xl">
+        <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-4xl mt-[25vh]">
           <h2
             className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-4"
             style={{ fontFamily: "var(--font-heading)" }}

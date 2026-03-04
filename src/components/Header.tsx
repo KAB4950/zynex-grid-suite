@@ -42,64 +42,63 @@ const Header = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        {/* Logo */}
-        <Link to="/">
-          <img src="/ZYNEXGROUP_LOGO.svg" alt="ZynexGroup Logo" className="h-4 md:h-[22px] w-auto cursor-pointer" />
-        </Link>
-
-        {/* Desktop Nav */}
-        <nav className="hidden items-center gap-8 lg:flex">
+      <div className="flex items-center justify-center w-full px-4 py-2">
+        {/* Desktop Nav - all elements in one centered group */}
+        <div className="hidden lg:flex items-center justify-center gap-6 md:gap-8">
+          <Link to="/">
+            <img src="/ZYNEXGROUP_LOGO.svg" alt="ZynexGroup Logo" className="h-4 md:h-[18px] w-auto cursor-pointer" />
+          </Link>
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
               activeClassName="text-foreground"
               end
             >
               {link.label}
             </NavLink>
           ))}
-        </nav>
-
-        {/* Desktop Right */}
-        <div className="hidden items-center gap-4 lg:flex">
           {langToggle}
-          <Button asChild size="sm" className="rounded-[4px] text-xs tracking-wider uppercase">
+          <Button asChild size="sm" className="rounded-[4px] text-[10px] tracking-wider uppercase h-7 px-4">
             <Link to="/contact">{t.nav.contact}</Link>
           </Button>
         </div>
 
-        {/* Mobile Menu */}
-        <div className="lg:hidden flex items-center gap-3">
-          {langToggle}
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Menu className="h-5 w-5" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-64">
-              <SheetTitle className="sr-only">Navigation</SheetTitle>
-              <nav className="mt-8 flex flex-col gap-4">
-                {navLinks.map((link) => (
-                  <NavLink
-                    key={link.to}
-                    to={link.to}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground py-2"
-                    activeClassName="text-foreground"
-                    end
-                  >
-                    {link.label}
-                  </NavLink>
-                ))}
-                <Button asChild size="sm" className="mt-4 rounded-[4px] text-xs tracking-wider uppercase">
-                  <Link to="/contact">{t.nav.contact}</Link>
+        {/* Mobile: logo left, menu right */}
+        <div className="lg:hidden flex items-center justify-between w-full">
+          <Link to="/">
+            <img src="/ZYNEXGROUP_LOGO.svg" alt="ZynexGroup Logo" className="h-4 w-auto cursor-pointer" />
+          </Link>
+          <div className="flex items-center gap-3">
+            {langToggle}
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="h-8 w-8">
+                  <Menu className="h-4 w-4" />
                 </Button>
-              </nav>
-            </SheetContent>
-          </Sheet>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-64">
+                <SheetTitle className="sr-only">Navigation</SheetTitle>
+                <nav className="mt-8 flex flex-col gap-4">
+                  {navLinks.map((link) => (
+                    <NavLink
+                      key={link.to}
+                      to={link.to}
+                      className="text-sm text-muted-foreground transition-colors hover:text-foreground py-2"
+                      activeClassName="text-foreground"
+                      end
+                    >
+                      {link.label}
+                    </NavLink>
+                  ))}
+                  <Button asChild size="sm" className="mt-4 rounded-[4px] text-xs tracking-wider uppercase">
+                    <Link to="/contact">{t.nav.contact}</Link>
+                  </Button>
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
