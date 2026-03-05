@@ -12,16 +12,10 @@ const AboutUs = () => {
   ];
 
   const featureRows = [
-    {
-      headline: a.row1_headline,
-      paragraph: a.row1_paragraph,
-      imageFirst: false, // Text Left, Image Right
-    },
-    {
-      headline: a.row2_headline,
-      paragraph: a.row2_paragraph,
-      imageFirst: true, // Image Left, Text Right
-    },
+    { headline: a.row1_headline, paragraph: a.row1_paragraph, imageFirst: false },
+    { headline: a.row2_headline, paragraph: a.row2_paragraph, imageFirst: true },
+    { headline: a.row3_headline, paragraph: a.row3_paragraph, imageFirst: false },
+    { headline: a.row4_headline, paragraph: a.row4_paragraph, imageFirst: true },
   ];
 
   return (
