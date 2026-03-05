@@ -87,7 +87,7 @@ const Battery = () => {
           {/* Right: STS Image */}
           <div className="relative w-full flex justify-center lg:justify-end">
             <img
-              src="/ZG_261_STS.webp"
+              src="/ZG_261_STS2.webp"
               alt="ZG-261 Static Transfer Switch"
               className="w-full max-w-3xl object-contain"
             />
