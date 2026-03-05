@@ -81,6 +81,32 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Hero 3: Grid Stabilization Markets */}
+      <section className="relative w-full h-[85vh] flex items-end overflow-hidden border-t-[15px] border-white">
+        <div className="absolute inset-0 z-0 bg-[url('/FRONT_INSULATOR.webp')] bg-cover bg-center bg-no-repeat" />
+        <div className="absolute inset-0 z-10 bg-gradient-to-tr from-black/80 via-black/40 to-transparent" />
+        <div className="relative z-20 px-6 md:px-12 lg:px-20 pb-16 md:pb-20 max-w-3xl">
+          <h2
+            className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-4"
+            style={{ fontFamily: "var(--font-heading)" }}
+          >
+            {t.hero3.headline}
+          </h2>
+          <p
+            className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8"
+            style={{ fontFamily: "var(--font-body)" }}
+          >
+            {t.hero3.paragraph}
+          </p>
+          <Link
+            to="/the-market"
+            className="bg-[#2c5cc5] text-white px-8 py-3 text-sm font-semibold rounded-full hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            {t.hero3.cta}
+          </Link>
+        </div>
+      </section>
+
       {/* Value Proposition */}
       <ValueProposition />
 

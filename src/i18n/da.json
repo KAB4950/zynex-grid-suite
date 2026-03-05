@@ -20,6 +20,11 @@
     "paragraph": "Som specialiseret C&I-projektudvikler styrer ZynexGroup hele livscyklussen af dit energilagringsaktiv. Vi navigerer nettilslutningsgodkendelser, anlægsteknik og hardwareinstallation for at levere fuldt operationel, nøglefærdig infrastruktur.",
     "cta": "Om ZynexGroup"
   },
+  "hero3": {
+    "headline": "Systemydelser og Netbalancering.",
+    "paragraph": "Integrationen af vedvarende energi kræver aktiv netbalancering. Batterilagring leverer de nødvendige responstider for at opretholde systemfrekvensen.",
+    "cta": "Læs mere"
+  },
   "value": {
     "title": "Kerne Operationel Værdi",
     "subtitle": "Algoritmisk styring af C&I batteriinfrastruktur giver fire distinkte finansielle og operationelle fordele.",

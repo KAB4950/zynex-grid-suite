@@ -20,6 +20,11 @@
     "paragraph": "As a specialized C&I project developer, ZynexGroup manages the entire lifecycle of your energy storage asset. We navigate grid-connection permitting, site engineering, and hardware installation to deliver fully operational, turnkey infrastructure.",
     "cta": "About ZynexGroup"
   },
+  "hero3": {
+    "headline": "Grid Stabilization Markets.",
+    "paragraph": "The integration of renewable energy requires active grid balancing. Battery storage provides the critical response times necessary to maintain system frequency.",
+    "cta": "Learn more"
+  },
   "value": {
     "title": "Core Operational Value",
     "subtitle": "Algorithmic management of C&I battery infrastructure yields four distinct financial and operational advantages.",
