@@ -16,6 +16,8 @@ const AboutUs = () => {
     { headline: a.row2_headline, paragraph: a.row2_paragraph, imageFirst: true },
     { headline: a.row3_headline, paragraph: a.row3_paragraph, imageFirst: false },
     { headline: a.row4_headline, paragraph: a.row4_paragraph, imageFirst: true },
+    { headline: a.row5_headline, paragraph: a.row5_paragraph, imageFirst: false },
+    { headline: a.row6_headline, paragraph: a.row6_paragraph, imageFirst: true },
   ];
 
   return (
