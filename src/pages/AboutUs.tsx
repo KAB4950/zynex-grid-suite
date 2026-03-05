@@ -11,6 +11,19 @@ const AboutUs = () => {
     { role: a.leader3_role, name: a.leader3_name, bio: a.leader3_bio },
   ];
 
+  const featureRows = [
+    {
+      headline: a.row1_headline,
+      paragraph: a.row1_paragraph,
+      imageFirst: false, // Text Left, Image Right
+    },
+    {
+      headline: a.row2_headline,
+      paragraph: a.row2_paragraph,
+      imageFirst: true, // Image Left, Text Right
+    },
+  ];
+
   return (
     <>
       {/* 1. Corporate Hero */}
@@ -49,6 +62,47 @@ const AboutUs = () => {
           ))}
         </div>
       </section>
+
+      {/* Feature Rows */}
+      {featureRows.map((row, i) => (
+        <section key={i} className={`py-24 px-8 md:px-16 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
+          <div className={`grid md:grid-cols-2 gap-16 max-w-7xl mx-auto items-center`}>
+            {/* On mobile: image always on top. On desktop: alternating. */}
+            <div className={`${row.imageFirst ? 'order-1' : 'order-2 md:order-1'}`}>
+              {row.imageFirst ? (
+                <div className="bg-[#F6F6F6] w-full min-h-[400px] flex items-center justify-center text-gray-400" style={{ fontFamily: "var(--font-body)" }}>
+                  [Placeholder Image]
+                </div>
+              ) : (
+                <div className="flex flex-col justify-center">
+                  <h2 className="text-3xl md:text-4xl font-semibold text-[#494949] tracking-tight mb-6" style={{ fontFamily: "var(--font-heading)" }}>
+                    {row.headline}
+                  </h2>
+                  <p className="text-gray-600 leading-relaxed max-w-[500px]" style={{ fontFamily: "var(--font-body)" }}>
+                    {row.paragraph}
+                  </p>
+                </div>
+              )}
+            </div>
+            <div className={`${row.imageFirst ? 'order-2' : 'order-1 md:order-2'}`}>
+              {row.imageFirst ? (
+                <div className="flex flex-col justify-center">
+                  <h2 className="text-3xl md:text-4xl font-semibold text-[#494949] tracking-tight mb-6" style={{ fontFamily: "var(--font-heading)" }}>
+                    {row.headline}
+                  </h2>
+                  <p className="text-gray-600 leading-relaxed max-w-[500px]" style={{ fontFamily: "var(--font-body)" }}>
+                    {row.paragraph}
+                  </p>
+                </div>
+              ) : (
+                <div className="bg-[#F6F6F6] w-full min-h-[400px] flex items-center justify-center text-gray-400" style={{ fontFamily: "var(--font-body)" }}>
+                  [Placeholder Image]
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      ))}
 
       {/* 3. Leadership */}
       <section className="py-24 px-8 md:px-16 max-w-5xl mx-auto bg-white">
