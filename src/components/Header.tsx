@@ -8,7 +8,6 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 const Header = () => {
   const { language, setLanguage, t } = useTranslation();
   const navLinks = [
-    { to: "/", label: t.nav.home },
     { to: "/battery", label: "ZG-261" },
     { to: "/the-market", label: t.nav.market },
     { to: "/insights", label: (t.nav as any).insights || "Insights" },
@@ -27,7 +26,7 @@ const Header = () => {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-white/85 backdrop-blur-md border-b border-gray-100 shadow-sm"
     >
       <div className="flex items-center justify-center w-full px-4 py-2">
         {/* Desktop Nav - all elements in one centered group */}
