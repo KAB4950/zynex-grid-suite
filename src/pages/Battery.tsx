@@ -174,8 +174,8 @@ const Battery = () => {
         </div>
       </section>
 
-      {/* Section 5: Safety & Containment Architecture */}
-      <section className="w-full py-24 md:py-32 bg-[#000000] border-none flex justify-center">
+      {/* Section 5: Safety & Containment Architecture — no gap, merged dark block */}
+      <section className="w-full py-24 md:py-32 bg-[#000000] border-none flex justify-center -mt-[15px]">
         <div className="max-w-7xl w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Open Cabinet Image (transparent PNG, no overlays) */}
           <div className="relative w-full flex justify-center lg:justify-start max-w-3xl">
