@@ -102,7 +102,25 @@ const AboutUs = () => {
         </section>
       ))}
 
-      {/* 3. Leadership */}
+      {/* Conclusion */}
+      <section className="py-[150px] px-8 md:px-16 bg-white">
+        <div className="max-w-[700px] mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#494949] mb-10" style={{ fontFamily: "var(--font-heading)" }}>
+            {a.conclusion_headline}
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-8" style={{ fontFamily: "var(--font-body)" }}>
+            {a.conclusion_p1}
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-8" style={{ fontFamily: "var(--font-body)" }}>
+            {a.conclusion_p2}
+          </p>
+          <p className="text-gray-600 leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
+            {a.conclusion_p3}
+          </p>
+        </div>
+      </section>
+
+      {/* Leadership */}
       <section className="py-24 px-8 md:px-16 max-w-5xl mx-auto bg-white">
         <h2 className="text-3xl font-semibold mb-12 text-[#494949]" style={{ fontFamily: "var(--font-heading)" }}>
           {a.leadership_title}
@@ -124,7 +142,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* 4. CTA */}
+      {/* CTA */}
       <section className="py-32 text-center flex flex-col items-center bg-gray-50 border-t border-gray-200">
         <h2 className="text-3xl font-semibold text-[#494949]" style={{ fontFamily: "var(--font-heading)" }}>
           {a.cta_title}
