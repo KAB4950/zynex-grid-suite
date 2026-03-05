@@ -216,7 +216,72 @@ const Battery = () => {
         </div>
       </section>
 
-      {/* Section 6: System Control & Diagnostics */}
+      {/* Section 6: Use Case Configurations */}
+      <section className="w-full bg-white py-24 md:py-32">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col gap-[120px]">
+          {/* Row 1: Image Left, Text Right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="flex justify-center">
+              <img src="/ZG_261_LOAD.webp" alt="System Services Integration" className="w-full max-w-xl object-contain" />
+            </div>
+            <div className="flex flex-col items-start max-w-[500px]">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}>
+                {b.usecase_row1_title}
+              </h2>
+              <p className="text-base md:text-lg leading-relaxed" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>
+                {b.usecase_row1_body}
+              </p>
+            </div>
+          </div>
+
+          {/* Row 2: Text Left, Image Right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="flex flex-col items-start max-w-[500px] order-2 lg:order-1">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}>
+                {b.usecase_row2_title}
+              </h2>
+              <p className="text-base md:text-lg leading-relaxed" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>
+                {b.usecase_row2_body}
+              </p>
+            </div>
+            <div className="flex justify-center order-1 lg:order-2">
+              <img src="/ZG_261_LOAD_STS.webp" alt="Configurable Outage Protection" className="w-full max-w-xl object-contain" />
+            </div>
+          </div>
+
+          {/* Row 3: Image Left, Text Right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="flex justify-center">
+              <img src="/ZG_261_PURE_COLOCATION.webp" alt="Generation Optimization" className="w-full max-w-xl object-contain" />
+            </div>
+            <div className="flex flex-col items-start max-w-[500px]">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}>
+                {b.usecase_row3_title}
+              </h2>
+              <p className="text-base md:text-lg leading-relaxed" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>
+                {b.usecase_row3_body}
+              </p>
+            </div>
+          </div>
+
+          {/* Row 4: Text Left, Image Right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="flex flex-col items-start max-w-[500px] order-2 lg:order-1">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}>
+                {b.usecase_row4_title}
+              </h2>
+              <p className="text-base md:text-lg leading-relaxed" style={{ fontFamily: "var(--font-body)", color: "#4b5563" }}>
+                {b.usecase_row4_body}
+              </p>
+            </div>
+            <div className="flex justify-center order-1 lg:order-2">
+              <img src="/ZG_261_LOAD_COLOCATION.webp" alt="Hybrid Infrastructure" className="w-full max-w-xl object-contain" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 7: System Control & Diagnostics */}
       <section className="w-full py-24 md:py-32 bg-gray-50 flex justify-center border-t border-gray-200">
         <div className="max-w-5xl w-full px-6 md:px-12 flex flex-col items-center text-center">
           <h2
