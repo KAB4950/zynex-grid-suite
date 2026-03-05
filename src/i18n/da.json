@@ -232,7 +232,11 @@
     "leader3_name": "Navn Pladsholder",
     "leader3_bio": "Tilsyn med fysisk C&I BESS-udrulning, anlægsteknik og streng HSE-overholdelse.",
     "cta_title": "Start en Partnerskabsdialog",
-    "cta_button": "Kontakt Vores Kontor"
+    "cta_button": "Kontakt Vores Kontor",
+    "row1_headline": "ZynexGroup Filosofien: Hvorfor vi bygger",
+    "row1_paragraph": "De fleste virksomheder i energisektoren vil fortælle dig, at de eksisterer for at redde planeten. Vi vil fortælle dig, at vi eksisterer, fordi matematikken giver mening. Vi kiggede på elnettet og så en massiv, strukturel ineffektivitet i fuldt dagslys. Vedvarende energi er i sin natur volatil. I takt med at der kommer mere grøn kapacitet på nettet, bliver balancering af strømforsyningen en fysisk nødvendighed. Samtidig så vi industrianlæg sidde med massive, underudnyttede nettilslutninger, helt uvidende om, at deres infrastruktur var et sovende økonomisk aktiv.",
+    "row2_headline": "Rå Økonomiske Incitamenter",
+    "row2_paragraph": "Man kan ikke løse ustabilitet i nettet med tilskud, gode intentioner eller virksomheders ESG-slogans. Det kan kun løses med tung ingeniørkunst og rå økonomiske incitamenter. Vi tror på, at den eneste reelle måde at skalere vedvarende energi på er at gøre det til den mest profitable løsning for kommercielle virksomheder. Vi designer systemerne, så netstabilitet og økonomisk afkast er det nøjagtig samme produkt. Det er den eneste årsag til, at ZynexGroup blev grundlagt: Vi identificerede en matematisk velfunderet og yderst profitabel måde at bygge den infrastruktur, markedet har brug for."
   },
   "insights_page": {
     "hero_title": "Markedsintelligens & Telemetri.",
