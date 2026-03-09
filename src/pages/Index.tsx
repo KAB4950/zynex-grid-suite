@@ -88,7 +88,6 @@ const Index = () => {
           <h2
             className="text-4xl md:text-6xl font-bold tracking-tight text-black mb-4"
             style={{ fontFamily: "var(--font-heading)", WebkitTextStroke: "1px white" }}
-            style={{ fontFamily: "var(--font-heading)" }}
           >
             {t.hero3.headline}
           </h2>
