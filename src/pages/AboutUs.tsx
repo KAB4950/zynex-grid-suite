@@ -95,27 +95,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Leadership */}
-      <section className="py-24 px-8 md:px-16 max-w-5xl mx-auto bg-white">
-        <h2 className="text-3xl font-semibold mb-12 text-[#494949]" style={{ fontFamily: "var(--font-heading)" }}>
-          {a.leadership_title}
-        </h2>
-        <div>
-          {leaders.map((person, i) => (
-            <div key={i} className="border-b border-gray-200 py-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
-              <span className="text-sm font-semibold text-[#2c5cc5] uppercase w-48 shrink-0 tracking-wider" style={{ fontFamily: "var(--font-body)" }}>
-                {person.role}
-              </span>
-              <span className="text-xl font-semibold text-[#494949] flex-grow" style={{ fontFamily: "var(--font-heading)" }}>
-                {person.name}
-              </span>
-              <span className="text-gray-600 md:max-w-md" style={{ fontFamily: "var(--font-body)" }}>
-                {person.bio}
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-32 text-center flex flex-col items-center bg-gray-50 border-t border-gray-200">
