@@ -87,6 +87,7 @@ const Index = () => {
         <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-4xl">
           <h2
             className="text-4xl md:text-6xl font-bold tracking-tight text-black mb-4"
+            style={{ fontFamily: "var(--font-heading)", WebkitTextStroke: "1px white" }}
             style={{ fontFamily: "var(--font-heading)" }}
           >
             {t.hero3.headline}
