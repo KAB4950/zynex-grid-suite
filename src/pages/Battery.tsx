@@ -222,7 +222,7 @@ const Battery = () => {
           {/* Row 1: Image Left, Text Right */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="flex justify-center">
-              <img src="/ZG_261_LOAD.webp" alt="System Services Integration" className="w-full max-w-xl object-contain" />
+              <img src="/ZG_261_LOAD2.webp" alt="System Services Integration" className="w-full max-w-xl object-contain" />
             </div>
             <div className="flex flex-col items-start max-w-[500px]">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4" style={{ fontFamily: "var(--font-heading)", color: "#1a1a1a" }}>
