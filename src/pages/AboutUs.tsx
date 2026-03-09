@@ -7,7 +7,7 @@ const AboutUs = () => {
 
 
   const featureRows = [
-    { headline: a.row1_headline, paragraph: a.row1_paragraph, imageFirst: false },
+    { headline: a.row1_headline, paragraph: a.row1_paragraph, imageFirst: false, image: "/ABOUT_US_PYLON.webp" },
     { headline: a.row2_headline, paragraph: a.row2_paragraph, imageFirst: true, image: "/ABOUT_US_PLANT.webp" },
     { headline: a.row3_headline, paragraph: a.row3_paragraph, imageFirst: false, image: "/ABOUT_US_SETUP.webp" },
     { headline: a.row4_headline, paragraph: a.row4_paragraph, imageFirst: true, image: "/ABOUT_US_MEETING.webp" },
@@ -89,24 +89,16 @@ const AboutUs = () => {
           <p className="text-gray-600 leading-relaxed mb-8" style={{ fontFamily: "var(--font-body)" }}>
             {a.conclusion_p2}
           </p>
-          <p className="text-gray-600 leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
+          <p className="text-gray-600 leading-relaxed mb-10" style={{ fontFamily: "var(--font-body)" }}>
             {a.conclusion_p3}
           </p>
+          <Link
+            to="/contact"
+            className="bg-[#2c5cc5] text-white rounded-full px-8 py-3 text-sm font-semibold hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg inline-block"
+          >
+            {a.cta_button}
+          </Link>
         </div>
-      </section>
-
-
-      {/* CTA */}
-      <section className="py-32 text-center flex flex-col items-center bg-gray-50 border-t border-gray-200">
-        <h2 className="text-3xl font-semibold text-[#494949]" style={{ fontFamily: "var(--font-heading)" }}>
-          {a.cta_title}
-        </h2>
-        <Link
-          to="/contact"
-          className="bg-[#2c5cc5] text-white rounded-none px-8 py-4 mt-8 hover:bg-blue-700 transition-colors uppercase tracking-wider text-sm font-semibold inline-block"
-        >
-          {a.cta_button}
-        </Link>
       </section>
     </>
   );
