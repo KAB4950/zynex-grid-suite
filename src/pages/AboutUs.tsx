@@ -25,12 +25,12 @@ const AboutUs = () => {
   return (
     <>
       {/* 1. Corporate Hero */}
-      <section className="relative min-h-[70vh] flex items-center justify-center -mt-16">
+      <section className="relative min-h-[70vh] flex items-end justify-center -mt-16 pb-16">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/ABOUT_US_TESLA.webp')" }}
         />
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-16 pt-32 pb-16 text-center">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-16 text-center">
           <h1 className="text-5xl md:text-7xl font-semibold text-white tracking-tight" style={{ fontFamily: "var(--font-heading)" }}>
             {a.hero_title}
           </h1>
