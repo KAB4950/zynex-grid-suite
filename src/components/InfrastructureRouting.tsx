@@ -74,7 +74,7 @@ const InfrastructureRouting = () => {
         title={t.infra.battery_title}
         body={t.infra.battery_body}
         cta={t.infra.battery_cta}
-        ctaLink="/battery"
+        ctaLink="/zg-261"
         placeholder={t.infra.battery_placeholder}
       />
       <InfraSection

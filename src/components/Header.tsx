@@ -8,7 +8,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 const Header = () => {
   const { language, setLanguage, t } = useTranslation();
   const navLinks = [
-    { to: "/battery", label: "ZG-261" },
+    { to: "/zg-261", label: "ZG-261" },
     { to: "/the-market", label: t.nav.market },
     { to: "/insights", label: (t.nav as any).insights || "Insights" },
     { to: "/about-us", label: t.nav.about },

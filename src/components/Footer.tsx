@@ -27,7 +27,7 @@ const Footer = () => {
             <nav className="flex flex-col gap-2">
               {[
                 { to: "/", label: t.nav.home },
-                { to: "/battery", label: t.nav.battery },
+                { to: "/zg-261", label: t.nav.battery },
                 { to: "/the-market", label: t.nav.market },
                 { to: "/insights", label: (t.nav as any).insights || "Insights" },
                 { to: "/about-us", label: t.nav.about },
