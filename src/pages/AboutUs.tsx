@@ -5,11 +5,6 @@ const AboutUs = () => {
   const { t } = useTranslation();
   const a = (t as any).about_page;
 
-  const leaders = [
-    { role: a.leader1_role, name: a.leader1_name, bio: a.leader1_bio },
-    { role: a.leader2_role, name: a.leader2_name, bio: a.leader2_bio },
-    { role: a.leader3_role, name: a.leader3_name, bio: a.leader3_bio },
-  ];
 
   const featureRows = [
     { headline: a.row1_headline, paragraph: a.row1_paragraph, imageFirst: false, image: "/ABOUT_US_PLANT.webp" },
