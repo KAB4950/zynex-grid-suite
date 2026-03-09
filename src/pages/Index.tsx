@@ -86,7 +86,7 @@ const Index = () => {
         <div className="absolute inset-0 z-0 bg-[url('/FRONT_INSULATOR.webp')] bg-cover bg-center bg-no-repeat" />
         <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-4xl">
           <h2
-            className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-4"
+            className="text-4xl md:text-6xl font-bold tracking-tight text-black mb-4"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             {t.hero3.headline}
