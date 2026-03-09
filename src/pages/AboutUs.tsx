@@ -7,7 +7,7 @@ const AboutUs = () => {
 
 
   const featureRows = [
-    { headline: a.row1_headline, paragraph: a.row1_paragraph, imageFirst: false },
+    { headline: a.row1_headline, paragraph: a.row1_paragraph, imageFirst: false, image: "/ABOUT_US_PYLON.webp" },
     { headline: a.row2_headline, paragraph: a.row2_paragraph, imageFirst: true, image: "/ABOUT_US_PLANT.webp" },
     { headline: a.row3_headline, paragraph: a.row3_paragraph, imageFirst: false, image: "/ABOUT_US_SETUP.webp" },
     { headline: a.row4_headline, paragraph: a.row4_paragraph, imageFirst: true, image: "/ABOUT_US_MEETING.webp" },
