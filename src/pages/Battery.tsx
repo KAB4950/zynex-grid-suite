@@ -275,7 +275,7 @@ const Battery = () => {
               </p>
             </div>
             <div className="flex justify-center order-1 lg:order-2">
-              <img src="/ZG_261_LOAD_COLOCATION.webp" alt="Hybrid Infrastructure" className="w-full max-w-xl object-contain" />
+              <img src="/ZG_261_LOAD_COLOCATION2.webp" alt="Hybrid Infrastructure" className="w-full max-w-xl object-contain" />
             </div>
           </div>
         </div>
