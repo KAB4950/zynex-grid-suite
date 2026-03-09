@@ -14,10 +14,10 @@ const AboutUs = () => {
   const featureRows = [
     { headline: a.row1_headline, paragraph: a.row1_paragraph, imageFirst: false },
     { headline: a.row2_headline, paragraph: a.row2_paragraph, imageFirst: true },
-    { headline: a.row3_headline, paragraph: a.row3_paragraph, imageFirst: false },
+    { headline: a.row3_headline, paragraph: a.row3_paragraph, imageFirst: false, image: "/ABOUT_US_SETUP.webp" },
     { headline: a.row4_headline, paragraph: a.row4_paragraph, imageFirst: true },
     { headline: a.row5_headline, paragraph: a.row5_paragraph, imageFirst: false },
-    { headline: a.row6_headline, paragraph: a.row6_paragraph, imageFirst: true },
+    { headline: a.row6_headline, paragraph: a.row6_paragraph, imageFirst: true, image: "/ABOUT_US_BOX.webp" },
     { headline: a.row7_headline, paragraph: a.row7_paragraph, imageFirst: false, image: "/ABOUT_US_KEYBOARD.webp" },
     { headline: a.row8_headline, paragraph: a.row8_paragraph, imageFirst: true },
   ];
