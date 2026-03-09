@@ -101,6 +101,7 @@ const Index = () => {
           </h3>
           <p
             className="text-lg md:text-xl text-black/70 leading-relaxed mb-10"
+            style={{ fontFamily: "var(--font-body)", WebkitTextStroke: "0.5px white" }}
             style={{ fontFamily: "var(--font-body)" }}
           >
             {t.hero3.paragraph}
