@@ -5,15 +5,10 @@ const AboutUs = () => {
   const { t } = useTranslation();
   const a = (t as any).about_page;
 
-  const leaders = [
-    { role: a.leader1_role, name: a.leader1_name, bio: a.leader1_bio },
-    { role: a.leader2_role, name: a.leader2_name, bio: a.leader2_bio },
-    { role: a.leader3_role, name: a.leader3_name, bio: a.leader3_bio },
-  ];
 
   const featureRows = [
-    { headline: a.row1_headline, paragraph: a.row1_paragraph, imageFirst: false, image: "/ABOUT_US_PLANT.webp" },
-    { headline: a.row2_headline, paragraph: a.row2_paragraph, imageFirst: true },
+    { headline: a.row1_headline, paragraph: a.row1_paragraph, imageFirst: false },
+    { headline: a.row2_headline, paragraph: a.row2_paragraph, imageFirst: true, image: "/ABOUT_US_PLANT.webp" },
     { headline: a.row3_headline, paragraph: a.row3_paragraph, imageFirst: false, image: "/ABOUT_US_SETUP.webp" },
     { headline: a.row4_headline, paragraph: a.row4_paragraph, imageFirst: true, image: "/ABOUT_US_MEETING.webp" },
     { headline: a.row5_headline, paragraph: a.row5_paragraph, imageFirst: false, image: "/ABOUT_US_SINGLE.webp" },
@@ -100,27 +95,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Leadership */}
-      <section className="py-24 px-8 md:px-16 max-w-5xl mx-auto bg-white">
-        <h2 className="text-3xl font-semibold mb-12 text-[#494949]" style={{ fontFamily: "var(--font-heading)" }}>
-          {a.leadership_title}
-        </h2>
-        <div>
-          {leaders.map((person, i) => (
-            <div key={i} className="border-b border-gray-200 py-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
-              <span className="text-sm font-semibold text-[#2c5cc5] uppercase w-48 shrink-0 tracking-wider" style={{ fontFamily: "var(--font-body)" }}>
-                {person.role}
-              </span>
-              <span className="text-xl font-semibold text-[#494949] flex-grow" style={{ fontFamily: "var(--font-heading)" }}>
-                {person.name}
-              </span>
-              <span className="text-gray-600 md:max-w-md" style={{ fontFamily: "var(--font-body)" }}>
-                {person.bio}
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-32 text-center flex flex-col items-center bg-gray-50 border-t border-gray-200">
