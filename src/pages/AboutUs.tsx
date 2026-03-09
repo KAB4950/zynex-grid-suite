@@ -92,8 +92,8 @@ const AboutUs = () => {
                   </p>
                 </div>
               ) : (
-                <div className="bg-[#F6F6F6] w-full min-h-[400px] flex items-center justify-center text-gray-400 overflow-hidden" style={{ fontFamily: "var(--font-body)" }}>
-                  {row.image ? <img src={row.image} alt={row.headline} className="w-full h-full object-cover min-h-[400px]" /> : "[Placeholder Image]"}
+                <div className="w-full min-h-[400px] flex items-center justify-center text-gray-400 overflow-hidden" style={{ fontFamily: "var(--font-body)" }}>
+                  {row.image ? <img src={row.image} alt={row.headline} className="w-full h-full object-cover min-h-[400px]" /> : <span className="bg-[#F6F6F6] w-full min-h-[400px] flex items-center justify-center">[Placeholder Image]</span>}
                 </div>
               )}
             </div>
