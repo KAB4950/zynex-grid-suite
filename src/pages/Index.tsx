@@ -86,19 +86,19 @@ const Index = () => {
         <div className="absolute inset-0 z-0 bg-[url('/FRONT_INSULATOR.webp')] bg-cover bg-center bg-no-repeat" />
         <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-4xl">
           <h2
-            className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-4"
+            className="text-4xl md:text-6xl font-bold tracking-tight text-black mb-4"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             {t.hero3.headline}
           </h2>
           <h3
-            className="text-2xl md:text-3xl font-medium text-gray-300 mb-8"
+            className="text-2xl md:text-3xl font-medium text-black/80 mb-8"
             style={{ fontFamily: "var(--font-body)" }}
           >
             {(t.hero3 as any).subheadline}
           </h3>
           <p
-            className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10"
+            className="text-lg md:text-xl text-black/70 leading-relaxed mb-10"
             style={{ fontFamily: "var(--font-body)" }}
           >
             {t.hero3.paragraph}
