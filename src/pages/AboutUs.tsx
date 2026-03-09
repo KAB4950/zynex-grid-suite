@@ -14,10 +14,10 @@ const AboutUs = () => {
   const featureRows = [
     { headline: a.row1_headline, paragraph: a.row1_paragraph, imageFirst: false },
     { headline: a.row2_headline, paragraph: a.row2_paragraph, imageFirst: true },
-    { headline: a.row3_headline, paragraph: a.row3_paragraph, imageFirst: false },
+    { headline: a.row3_headline, paragraph: a.row3_paragraph, imageFirst: false, image: "/ABOUT_US_SETUP.webp" },
     { headline: a.row4_headline, paragraph: a.row4_paragraph, imageFirst: true },
     { headline: a.row5_headline, paragraph: a.row5_paragraph, imageFirst: false },
-    { headline: a.row6_headline, paragraph: a.row6_paragraph, imageFirst: true },
+    { headline: a.row6_headline, paragraph: a.row6_paragraph, imageFirst: true, image: "/ABOUT_US_BOX.webp" },
     { headline: a.row7_headline, paragraph: a.row7_paragraph, imageFirst: false, image: "/ABOUT_US_KEYBOARD.webp" },
     { headline: a.row8_headline, paragraph: a.row8_paragraph, imageFirst: true },
   ];
@@ -25,12 +25,12 @@ const AboutUs = () => {
   return (
     <>
       {/* 1. Corporate Hero */}
-      <section className="relative min-h-[70vh] flex items-center justify-center -mt-16">
+      <section className="relative min-h-[70vh] flex items-end justify-center -mt-16 pb-16">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/ABOUT_US_TESLA.webp')" }}
         />
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-16 pt-32 pb-16 text-center">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-16 text-center">
           <h1 className="text-5xl md:text-7xl font-semibold text-white tracking-tight" style={{ fontFamily: "var(--font-heading)" }}>
             {a.hero_title}
           </h1>
