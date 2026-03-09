@@ -25,7 +25,7 @@ const AboutUs = () => {
   return (
     <>
       {/* 1. Corporate Hero */}
-      <section className="relative min-h-[70vh] flex items-end justify-center -mt-16 pb-16">
+      <section className="relative min-h-[70vh] flex items-start justify-center -mt-16 pt-32">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/ABOUT_US_TESLA.webp')" }}
