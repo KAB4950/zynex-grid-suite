@@ -26,7 +26,7 @@ const AboutUs = () => {
           style={{ backgroundImage: "url('/ABOUT_US_TESLA.webp')" }}
         />
         <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-16 text-center">
-          <h1 className="text-5xl md:text-7xl font-semibold tracking-tight bg-gradient-to-r from-[#2D2D2D] to-[#000000] bg-clip-text text-transparent" style={{ fontFamily: "var(--font-heading)" }}>
+          <h1 className="text-5xl md:text-7xl font-semibold tracking-tight bg-gradient-to-r from-[#000000] to-[#6B7280] bg-clip-text text-transparent pb-2" style={{ fontFamily: "var(--font-heading)" }}>
             {a.hero_title}
           </h1>
           <p className="text-xl text-white/80 mt-6 leading-relaxed max-w-2xl mx-auto" style={{ fontFamily: "var(--font-body)" }}>
