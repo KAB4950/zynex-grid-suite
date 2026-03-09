@@ -18,26 +18,26 @@ const AboutUs = () => {
     { headline: a.row4_headline, paragraph: a.row4_paragraph, imageFirst: true },
     { headline: a.row5_headline, paragraph: a.row5_paragraph, imageFirst: false },
     { headline: a.row6_headline, paragraph: a.row6_paragraph, imageFirst: true },
-    { headline: a.row7_headline, paragraph: a.row7_paragraph, imageFirst: false },
+    { headline: a.row7_headline, paragraph: a.row7_paragraph, imageFirst: false, image: "/ABOUT_US_KEYBOARD.webp" },
     { headline: a.row8_headline, paragraph: a.row8_paragraph, imageFirst: true },
   ];
 
   return (
     <>
       {/* 1. Corporate Hero */}
-      <section className="min-h-[60vh] pt-32 pb-16 px-8 md:px-16 flex items-center bg-white">
-        <div className="grid md:grid-cols-2 gap-16 w-full max-w-7xl mx-auto">
-          <div className="flex flex-col justify-center">
-            <h1 className="text-5xl md:text-7xl font-semibold text-[#494949] tracking-tight" style={{ fontFamily: "var(--font-heading)" }}>
-              {a.hero_title}
-            </h1>
-            <p className="text-xl text-gray-600 mt-6 leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
-              {a.hero_subtitle}
-            </p>
-          </div>
-          <div className="bg-[#F6F6F6] w-full h-full min-h-[400px] flex items-center justify-center text-gray-400" style={{ fontFamily: "var(--font-body)" }}>
-            {a.hero_placeholder}
-          </div>
+      <section className="relative min-h-[70vh] flex items-center">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/ABOUT_US_TESLA.webp')" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-16 pt-32 pb-16">
+          <h1 className="text-5xl md:text-7xl font-semibold text-white tracking-tight" style={{ fontFamily: "var(--font-heading)" }}>
+            {a.hero_title}
+          </h1>
+          <p className="text-xl text-white/80 mt-6 leading-relaxed max-w-2xl" style={{ fontFamily: "var(--font-body)" }}>
+            {a.hero_subtitle}
+          </p>
         </div>
       </section>
 
@@ -68,8 +68,8 @@ const AboutUs = () => {
             {/* On mobile: image always on top. On desktop: alternating. */}
             <div className={`${row.imageFirst ? 'order-1' : 'order-2 md:order-1'}`}>
               {row.imageFirst ? (
-                <div className="bg-[#F6F6F6] w-full min-h-[400px] flex items-center justify-center text-gray-400" style={{ fontFamily: "var(--font-body)" }}>
-                  [Placeholder Image]
+                <div className="bg-[#F6F6F6] w-full min-h-[400px] flex items-center justify-center text-gray-400 overflow-hidden" style={{ fontFamily: "var(--font-body)" }}>
+                  {row.image ? <img src={row.image} alt={row.headline} className="w-full h-full object-cover min-h-[400px]" /> : "[Placeholder Image]"}
                 </div>
               ) : (
                 <div className="flex flex-col justify-center">
@@ -93,8 +93,8 @@ const AboutUs = () => {
                   </p>
                 </div>
               ) : (
-                <div className="bg-[#F6F6F6] w-full min-h-[400px] flex items-center justify-center text-gray-400" style={{ fontFamily: "var(--font-body)" }}>
-                  [Placeholder Image]
+                <div className="bg-[#F6F6F6] w-full min-h-[400px] flex items-center justify-center text-gray-400 overflow-hidden" style={{ fontFamily: "var(--font-body)" }}>
+                  {row.image ? <img src={row.image} alt={row.headline} className="w-full h-full object-cover min-h-[400px]" /> : "[Placeholder Image]"}
                 </div>
               )}
             </div>
