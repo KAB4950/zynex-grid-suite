@@ -40,25 +40,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* 2. Operating Principles */}
-      <section className="py-24 px-8 md:px-16 bg-gray-50 border-y border-gray-200">
-        <div className="grid md:grid-cols-3 gap-12 max-w-7xl mx-auto">
-          {[
-            { title: a.principle1_title, body: a.principle1_body },
-            { title: a.principle2_title, body: a.principle2_body },
-            { title: a.principle3_title, body: a.principle3_body },
-          ].map((card, i) => (
-            <div key={i}>
-              <h3 className="text-xl font-semibold mb-4 text-[#494949]" style={{ fontFamily: "var(--font-heading)" }}>
-                {card.title}
-              </h3>
-              <p className="text-gray-600" style={{ fontFamily: "var(--font-body)" }}>
-                {card.body}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* Feature Rows */}
       {featureRows.map((row, i) => (
