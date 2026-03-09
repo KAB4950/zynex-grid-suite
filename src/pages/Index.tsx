@@ -92,7 +92,7 @@ const Index = () => {
             {t.hero3.headline}
           </h2>
           <h3
-            className="text-2xl md:text-3xl font-medium text-gray-300 mb-8"
+            className="text-2xl md:text-3xl font-medium text-black/80 mb-8"
             style={{ fontFamily: "var(--font-body)" }}
           >
             {(t.hero3 as any).subheadline}
