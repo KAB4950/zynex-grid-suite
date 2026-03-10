@@ -78,7 +78,7 @@ const TheMarket = () => {
 
         return (
           <div key={i}>
-            {i > 0 && <MarketArrowConnector fromDark={!isDark} />}
+            
             <section
               className={`py-20 md:py-28 px-8 md:px-16 ${isDark ? "bg-foreground" : "bg-background"}`}
               style={i === 0 ? { paddingTop: "10rem" } : undefined}
