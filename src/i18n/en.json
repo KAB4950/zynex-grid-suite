@@ -285,38 +285,38 @@
         "visualLabel": "Infographic placeholder (Section 15)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "16. The Cost and Delay of New Grid Connections",
+        "body": "If you want to build a large, standalone battery park today, you run into an immediate physical and financial wall: the grid connection. Establishing a new, high-capacity connection from the local Distribution System Operator (DSO) is extremely expensive. Furthermore, because the public grid is already under massive pressure, getting this new connection approved and physically built can currently take up to seven years in Denmark.",
         "visualLabel": "Infographic placeholder (Section 16)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "17. The Grid Connection as an Unused Commodity",
+        "body": "However, industrial facilities and commercial buildings already have high-capacity grid connections installed. A grid connection is a physical commodity. In many cases, the full two-way potential of this infrastructure lies underutilized. Instead of waiting years and paying heavily for a new connection, ZynexGroup utilizes your entire existing grid connection to deliver System Services alongside your normal operations.",
         "visualLabel": "Infographic placeholder (Section 17)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "18. Predictable Consumption and Up-Regulation",
+        "body": "If your facility has a steady, predictable power consumption, that is an advantage. Industrial sites typically operate on Type C grid connections, which allow them to export the exact same amount of power to the grid as they are permitted to consume. On the market, up-regulation (giving power to the grid) pays significantly better than down-regulation. When the grid requires up-regulation, the battery can instantly take over powering your facility while simultaneously exporting power back to the grid. From the grid's perspective, the power you stopped pulling and the power you are exporting combine into one larger up-regulation delivery. Therefore, a site that actively consumes power can mathematically deliver a larger up-regulation volume.",
         "visualLabel": "Infographic placeholder (Section 18)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "19. Building for Your Connection",
+        "body": "Because the battery is placed behind your existing meter, it must respect the physical limits of your current cables. You cannot simply connect an oversized standard battery; the hardware must fit the exact size of your electrical \"pipe.\" ZynexGroup builds modular installations, allowing us to configure the precise kilowatt capacity required to perfectly match your site's specific electrical threshold, ensuring you do not pay for unusable hardware.",
         "visualLabel": "Infographic placeholder (Section 19)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "20. Securing Against Power Outages",
+        "body": "Beyond balancing the public grid, the battery can also act as a physical shield for your own building. The installation can optionally be equipped with a Static Transfer Switch (STS) to secure your facility from blackouts. In the event of a total grid failure, this switch safely disconnects your facility from the public network and flips your building over to battery power, keeping sensitive production and IT equipment running safely. This backup capability operates in parallel with System Services, meaning it does not interfere with the battery's standard market operation.",
         "visualLabel": "Infographic placeholder (Section 20)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "21. Future Bottlenecks and Grid Deficits",
+        "body": "The need for these local safety nets and flexible assets is mathematically guaranteed to grow. According to Energinet's projections, the physical grid is struggling to handle the mass electrification of transport and heating. At the same time, EU targets mandate 70% renewable energy by 2030 and 100% by 2050. This means the heavy, rotating mass of old power plants will continue to disappear right as our electricity needs peak. This combination directly leads to more severe grid bottlenecks and a higher risk of physical power outages in the future.",
         "visualLabel": "Infographic placeholder (Section 21)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "22. Site-Specific Investment Analysis",
+        "body": "Because the exact capability of a BESS depends entirely on your specific grid connection and your daily consumption rhythm, no two business cases are identical. By analyzing your facility's historical data and grid connection parameters, ZynexGroup engineers calculate the exact hardware configuration needed and provide an objective investment report for your site.",
         "visualLabel": "Infographic placeholder (Section 22)"
       }
     ],
