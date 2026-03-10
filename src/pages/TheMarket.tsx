@@ -2,6 +2,40 @@ import { useTranslation } from "@/i18n/LanguageContext";
 import MarketVisualPlaceholder from "@/components/MarketVisualPlaceholder";
 import MarketArrowConnector from "@/components/MarketArrowConnector";
 
+/** Minimal markdown: **bold**, bullet lists (* item), newlines */
+const renderMarkdown = (text: string) => {
+  const lines = text.split("\n");
+  const elements: React.ReactNode[] = [];
+  let listItems: React.ReactNode[] = [];
+
+  const flushList = () => {
+    if (listItems.length > 0) {
+      elements.push(<ul key={`ul-${elements.length}`} className="list-disc pl-6 space-y-2 my-3">{listItems}</ul>);
+      listItems = [];
+    }
+  };
+
+  const renderInline = (s: string) => {
+    // Handle **bold**
+    const parts = s.split(/\*\*(.*?)\*\*/g);
+    return parts.map((part, i) => (i % 2 === 1 ? <strong key={i}>{part}</strong> : part));
+  };
+
+  lines.forEach((line, i) => {
+    const trimmed = line.trim();
+    if (trimmed.startsWith("* ") || trimmed.startsWith("*   ")) {
+      const content = trimmed.replace(/^\*\s+/, "");
+      listItems.push(<li key={`li-${i}`}>{renderInline(content)}</li>);
+    } else if (trimmed === "") {
+      flushList();
+    } else {
+      flushList();
+      elements.push(<p key={`p-${i}`} className="mb-3 last:mb-0">{renderInline(trimmed)}</p>);
+    }
+  });
+  flushList();
+  return elements;
+};
 const SECTION_COUNT = 8;
 
 const TheMarket = () => {
@@ -29,7 +63,7 @@ const TheMarket = () => {
               }`}
               style={{ fontFamily: "var(--font-body)" }}
             >
-              {section.body || ""}
+              {section.body ? renderMarkdown(section.body) : ""}
             </div>
           </div>
         );

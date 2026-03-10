@@ -209,14 +209,46 @@
   },
   "market_story": {
     "sections": [
-      { "title": "", "body": "", "visualLabel": "" },
-      { "title": "", "body": "", "visualLabel": "" },
-      { "title": "", "body": "", "visualLabel": "" },
-      { "title": "", "body": "", "visualLabel": "" },
-      { "title": "", "body": "", "visualLabel": "" },
-      { "title": "", "body": "", "visualLabel": "" },
-      { "title": "", "body": "", "visualLabel": "" },
-      { "title": "", "body": "", "visualLabel": "" }
+      {
+        "title": "1. The Invisible and Delicate Balance",
+        "body": "Most people never think about what happens behind the scenes to ensure the lights always turn on and EV chargers always work. But the electrical grid relies on a delicate, invisible balance: exact parity between power produced and power consumed. The grid itself cannot store energy. Every single watt must be consumed in the exact millisecond it is generated. Imagine a massive physical scale that must be kept perfectly level at all times; if it tips too far in either direction, the system collapses.",
+        "visualLabel": "Infographic placeholder (Section 1)"
+      },
+      {
+        "title": "2. The Loss of Mechanical Momentum",
+        "body": "Historically, maintaining this balance was easier. Our power came from massive fossil-fuel power plants. The heavy rotating turbines inside these plants acted like the wheels on a heavy bicycle—they provided \"inertia.\" If a sudden gust of wind hit, the heavy bicycle would stay on course. Today, as we transition to renewable sources like wind and solar, we are switching to a much lighter bicycle. The grid is losing its physical inertia, making it more sensitive to sudden changes in weather and consumption.",
+        "visualLabel": "Infographic placeholder (Section 2)"
+      },
+      {
+        "title": "3. Enter System Services",
+        "body": "To preserve this delicate balance, grid operators—typically the Transmission System Operator (TSO), such as Energinet in Denmark—buy what are known as \"System Services.\" These are contracts with flexible assets that stand ready to act as counterweights on our scale. In theory, anything can provide a system service. If you stood by a light switch and turned it off the exact second the TSO signaled there was a power shortage, you would technically be providing a system service.",
+        "visualLabel": "Infographic placeholder (Section 3)"
+      },
+      {
+        "title": "4. Two-Way Street: Up and Down Regulation",
+        "body": "Because the grid fluctuates in both directions, System Services must do the same:\n\n*   **Up-Regulation:** If a cloud suddenly covers a massive solar park, the grid needs more power. Flexible assets are signaled to either produce more energy or consume less. \n\n*   **Down-Regulation:** If a storm produces more wind energy than the country is currently using, the grid has too much power. Assets are signaled to consume more or lower their production.\n\nThe consequence of failing to manage this two-way street is severe. If the frequency deviates too far from the standard 50 Hz, safety relays trip, resulting in the large-scale blackouts we have seen across parts of Europe in recent years.",
+        "visualLabel": "Infographic placeholder (Section 4)"
+      },
+      {
+        "title": "5. The Hierarchy of Response Times",
+        "body": "The landscape of System Services is divided by speed and stamina. Some grid instabilities require an immediate reaction, but only for a short time—like a sprinter catching a falling glass. Other services are slower to respond but can run for hours—like a marathon runner. The slower services step in to offload the fast ones, allowing the \"sprinters\" to reset and stand ready for the next sudden imbalance.",
+        "visualLabel": "Infographic placeholder (Section 5)"
+      },
+      {
+        "title": "6. Why Batteries (BESS) are the Ultimate Asset",
+        "body": "Different assets are suited for different roles, but Battery Energy Storage Systems (BESS) are uniquely capable. A battery is the ultimate flexible asset because it acts as both a consumer and a generator. It can seamlessly switch between up-regulating (discharging power) and down-regulating (absorbing power). Furthermore, it does not permanently consume the energy; the exact power it absorbs to help the grid is stored and released back when needed.",
+        "visualLabel": "Infographic placeholder (Section 6)"
+      },
+      {
+        "title": "7. Fun Fact: The 1.3-Second Sprint",
+        "body": "To understand just how fast a battery can move, look at the DK2 (Eastern Denmark) energy market. The system service known as Fast Frequency Reserve (FFR) requires a response time of just 1.3 seconds. If a BESS unit gets activated with a 10 MW commitment, the hardware must physically go from 0 to 10 MW of output in a mere 1.3 seconds. It is a level of precision and speed that mechanical power plants simply cannot match.",
+        "visualLabel": "Infographic placeholder (Section 7)"
+      },
+      {
+        "title": "8. The Story So Far: A Recap",
+        "body": "*   Power must be consumed the exact moment it is produced to maintain a delicate grid balance.\n\n*   The mechanical inertia of the grid is decreasing due to the rise of renewable energy.\n\n*   TSOs purchase flexible System Services to uphold the balance.\n\n*   Thanks to their bidirectional capabilities and millisecond response times, batteries are the most effective flexible assets available today.",
+        "visualLabel": "Infographic placeholder (Section 8)"
+      }
     ]
   },
   "about_page": {
