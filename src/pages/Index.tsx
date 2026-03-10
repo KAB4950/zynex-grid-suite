@@ -82,7 +82,7 @@ const Index = () => {
       </section>
 
       {/* Hero 3: Grid Stabilization Markets */}
-      <section className="relative w-full h-[85vh] flex items-center justify-center overflow-hidden border-t-[15px] border-white">
+      <section className="relative w-full h-[85vh] flex items-end justify-center overflow-hidden border-t-[15px] border-white pb-16">
         <div className="absolute inset-0 z-0 bg-[url('/FRONT_INSULATOR.webp')] bg-cover bg-center bg-no-repeat" />
         <div className="relative z-20 flex flex-col items-center text-center px-6 max-w-4xl">
           <div className="bg-white/60 backdrop-blur-sm rounded-2xl px-10 py-10 shadow-lg">
