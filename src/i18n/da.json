@@ -285,38 +285,38 @@
         "visualLabel": "Infografik placeholder (Sektion 15)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "16. Omkostningerne og Forsinkelsen ved Nye Nettilslutninger",
+        "body": "Hvis man i dag vil bygge en stor, fritstående batteripark, rammer man straks en fysisk og økonomisk mur: nettilslutningen. At etablere en ny højkapacitetstilslutning fra det lokale netselskab (DSO) er ekstremt dyrt. Fordi det offentlige elnet allerede er under massivt pres, kan det desuden tage op til syv år at få godkendt og fysisk bygget denne nye tilslutning i Danmark.",
         "visualLabel": "Infografik placeholder (Sektion 16)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "17. Nettilslutningen som en Ubrugt Ressource",
+        "body": "Men industrianlæg og erhvervsbygninger har allerede installeret nettilslutninger med høj kapacitet. En nettilslutning er en fysisk handelsvare. I mange tilfælde ligger det fulde tovejspotentiale af denne infrastruktur underudnyttet hen. I stedet for at vente i årevis og betale dyrt for en ny tilslutning, udnytter ZynexGroup hele jeres eksisterende nettilslutning til at levere systemydelser parallelt med jeres normale drift.",
         "visualLabel": "Infografik placeholder (Sektion 17)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "18. Forudsigeligt Forbrug og Opregulering",
+        "body": "Hvis din virksomhed har et stabilt, forudsigeligt strømforbrug, er det en fordel. Industrianlæg opererer typisk på Type C-nettilslutninger, hvilket betyder, at de har tilladelse til at eksportere den samme mængde strøm til nettet, som de har tilladelse til at forbruge. På markedet betaler opregulering (at levere strøm til nettet) markant bedre end nedregulering. Når nettet har brug for opregulering, kan batteriet øjeblikkeligt overtage strømforsyningen til din virksomhed, samtidig med at det eksporterer strøm tilbage til nettet. Set fra elnettets perspektiv kombineres den strøm, I stoppede med at trække, og den strøm, I eksporterer, til én større opreguleringsleverance. Derfor kan et anlæg, der aktivt forbruger strøm, matematisk set levere et større opreguleringsvolumen.",
         "visualLabel": "Infografik placeholder (Sektion 18)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "19. Bygget til Din Tilslutning",
+        "body": "Fordi batteriet placeres bag din eksisterende måler, skal det respektere de fysiske grænser i dine nuværende kabler. Man kan ikke bare tilslutte et overdimensioneret standardbatteri; hardwaren skal passe præcis til størrelsen på dit elektriske \"rør\". ZynexGroup bygger modulære installationer, hvilket giver os mulighed for at konfigurere den præcise kilowatt-kapacitet, der kræves for at matche din lokations specifikke elektriske grænse, så du ikke betaler for ubrugelig hardware.",
         "visualLabel": "Infografik placeholder (Sektion 19)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "20. Sikring mod Strømafbrydelser",
+        "body": "Ud over at balancere det offentlige elnet kan batteriet også fungere som et fysisk skjold for din egen bygning. Installationen kan valgfrit udstyres med en Static Transfer Switch (STS) for at sikre din virksomhed mod strømafbrydelser. I tilfælde af et strømsvigt afbryder denne kontakt sikkert din virksomhed fra det offentlige net og skifter bygningen over på batteridrift, så følsomt produktions- og IT-udstyr holdes kørende. Denne backup-kapacitet fungerer parallelt med systemydelser, hvilket betyder, at den ikke forstyrrer batteriets normale markedsdrift.",
         "visualLabel": "Infografik placeholder (Sektion 20)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "21. Fremtidige Flaskehalse og Netunderskud",
+        "body": "Behovet for disse lokale sikkerhedsnet og fleksible anlæg vil matematisk set kun vokse. Ifølge Energinets fremskrivninger kæmper det fysiske elnet med at håndtere masse-elektrificeringen af transport og opvarmning. Samtidig dikterer EU-målsætninger 70 % vedvarende energi i 2030 og 100 % i 2050. Det betyder, at den tunge, roterende masse fra gamle kraftværker fortsat vil forsvinde, netop som vores elbehov topper. Denne kombination fører direkte til mere alvorlige net-flaskehalse og en højere risiko for fysiske strømafbrydelser i fremtiden.",
         "visualLabel": "Infografik placeholder (Sektion 21)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "22. Lokationsspecifik Investeringsanalyse",
+        "body": "Fordi den nøjagtige kapacitet af et BESS-anlæg afhænger fuldstændigt af din specifikke nettilslutning og din daglige forbrugsrytme, er to business cases aldrig identiske. Ved at analysere din lokations historiske data og parametre for nettilslutning kan ZynexGroups ingeniører beregne den nøjagtige hardwarekonfiguration, der er behov for, og levere en objektiv investeringsrapport for dit anlæg.",
         "visualLabel": "Infografik placeholder (Sektion 22)"
       }
     ],
