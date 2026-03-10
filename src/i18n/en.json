@@ -207,6 +207,18 @@
     "cta_title": "Request a Financial Projection",
     "cta_button": "Request a Financial Projection"
   },
+  "market_story": {
+    "sections": [
+      { "title": "", "body": "", "visualLabel": "" },
+      { "title": "", "body": "", "visualLabel": "" },
+      { "title": "", "body": "", "visualLabel": "" },
+      { "title": "", "body": "", "visualLabel": "" },
+      { "title": "", "body": "", "visualLabel": "" },
+      { "title": "", "body": "", "visualLabel": "" },
+      { "title": "", "body": "", "visualLabel": "" },
+      { "title": "", "body": "", "visualLabel": "" }
+    ]
+  },
   "about_page": {
     "hero_title": "About ZynexGroup",
     "mission": "Our mission is to accelerate the green transition by pioneering the most intelligent and efficient model for developing and operating battery energy storage. We are committed to future-proofing the energy system.",
