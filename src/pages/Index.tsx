@@ -117,8 +117,6 @@ const Index = () => {
       {/* Value Proposition */}
       <ValueProposition />
 
-      {/* Infrastructure Routing */}
-      <InfrastructureRouting />
 
       {/* Full-Bleed Divider */}
       <FullBleedDivider />
