@@ -250,38 +250,38 @@
         "visualLabel": "Infografik placeholder (Sektion 8)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "9. Den Kæmpemæssige Synkroniserede Maskine",
+        "body": "For at forstå markedet skal man først forstå det fysiske kort. Et elnet er ikke bare ledninger; det er én enkelt, synkroniseret maskine. Når lande forbinder deres elnet, danner de et \"synkronområde\". Forestil dig et massivt system af indgribende tandhjul. Ethvert kraftværk og batteri i det område skal dreje med nøjagtig samme hastighed – 50 Hz. Hvis ét lands tandhjul sænker farten, trækker det fysisk i resten af netværket.",
         "visualLabel": "Infografik placeholder (Sektion 9)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "10. Europas To Hovednet",
+        "body": "Europa er ikke én samlet maskine. Det er opdelt i flere separate, massive synkronområder. De to vigtigste er det Kontinentaleuropæiske område (som forbinder Tyskland, Frankrig, Spanien, Polen og det meste af fastlandseuropa) og det Nordiske område (som forbinder Norge, Sverige og Finland). Disse to massive elnet fungerer uafhængigt af hinanden og er ikke synkroniserede.",
         "visualLabel": "Infografik placeholder (Sektion 10)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "11. Handelslaget: Nord Pool og PICASSO",
+        "body": "Oven på denne fysiske infrastruktur ligger det finansielle lag: de markeder, hvor energi og systemydelser rent faktisk handles. For eksempel er Nord Pool det ledende elmarked i Europa, hvor selve strømmen købes og sælges fra dag til dag. Samtidig er platforme som PICASSO europæiske balanceringsplatforme, hvor de systemansvarlige (TSO'erne) handler de fleksible \"systemydelser\", vi gennemgik tidligere. Det fysiske net flytter elektronerne; markedsplatformene flytter pengene og aktiveringssignalerne.",
         "visualLabel": "Infografik placeholder (Sektion 11)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "12. Den Danske Anomali: DK1 og DK2",
+        "body": "Normalt befinder et land sig trygt inden for ét enkelt synkronområde. Danmark er undtagelsen. Geografisk ligger Danmark lige præcis på brudlinjen mellem det kontinentale og det nordiske net. Dette deler fysisk landet i to. Vestdanmark (DK1) er synkroniseret med Tyskland og resten af Kontinentaleuropa. Østdanmark (DK2) er synkroniseret med Sverige og det nordiske net.",
         "visualLabel": "Infografik placeholder (Sektion 12)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "13. Nabolandenes Modenhed",
+        "body": "Denne opdeling gør det danske elnet iboende komplekst at operere i. Mens vores nabolande – Tyskland i syd og Sverige i nord – har yderst modne markeder for batterienergilagringssystemer (BESS), er Danmark sakket bagud. I Tyskland og Sverige har store udrulningsvolumener over årene skabt strømlinede integrationsprocesser og klare operationelle rammer for systemydelser.",
         "visualLabel": "Infografik placeholder (Sektion 13)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "14. Dokumentationsflaskehalsen og Prisoligopolet",
+        "body": "Den primære årsag til, at Danmark mangler denne modenhed, er regulatorisk friktion. At implementere et BESS-projekt i Danmark kræver, at man navigerer i en berygtet streng, lokaliseret dokumentations- og godkendelsesproces baseret på EU-forordninger. Denne compliance-barriere er så krævende, at kun et meget lille antal tidlige aktører har opnået netgodkendelse. Denne mangel på konkurrence har skabt et oligopol, som tillader få leverandører at diktere markedet og opkræve kunstigt oppustede priser for BESS-hardware og integration.",
         "visualLabel": "Infografik placeholder (Sektion 14)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "15. Nedbrydning af Flaskehalsen: ZynexGroup Tilgangen",
+        "body": "Dette er den specifikke flaskehals, ZynexGroup er bygget til at løse. Vores mål er at mestre hele kæden – fra den rå hardwarearkitektur til den komplekse EU-dokumentation og netgodkendelsesprotokoller. Ved at internalisere den ekspertise, der kræves for at navigere i Danmarks rigide godkendelsesproces, fjerner vi friktionen, bryder prisoligopolet og bringer BESS-udrulning ned til dens sande, skalerede omkostning.",
         "visualLabel": "Infografik placeholder (Sektion 15)"
       }
     ]
