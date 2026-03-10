@@ -250,38 +250,38 @@
         "visualLabel": "Infographic placeholder (Section 8)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "9. The Giant Synchronized Machine",
+        "body": "To understand the energy market, you must first understand the physical map. An electrical grid is not just wires; it is a single, synchronized machine. When countries connect their grids, they form a \"synchronous area.\" Imagine a massive system of interlocking gears. Every power plant and battery in that area must spin at the exact same speed—50 Hz. If one country's gear slows down, it physically pulls on the rest of the network.",
         "visualLabel": "Infographic placeholder (Section 9)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "10. Europe's Two Main Grids",
+        "body": "Europe is not one single machine. It is divided into several separate, massive synchronous areas. The two main ones are the Continental Europe area (connecting Germany, France, Spain, Poland, and most of mainland Europe) and the Nordic area (connecting Norway, Sweden, and Finland). These two massive grids operate independently and are not synchronized with each other.",
         "visualLabel": "Infographic placeholder (Section 10)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "11. The Trading Layer: Nord Pool and PICASSO",
+        "body": "On top of this physical infrastructure sits the financial layer: the markets where energy and system services are actually traded. For example, Nord Pool is the leading power market in Europe where the raw electricity is bought and sold day-to-day. Meanwhile, platforms like PICASSO are European-wide balancing platforms where the Transmission System Operators trade the flexible \"system services\" we discussed earlier. The physical grid moves the electrons; the market platforms move the money and the dispatch signals.",
         "visualLabel": "Infographic placeholder (Section 11)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "12. The Danish Anomaly: DK1 and DK2",
+        "body": "Usually, a country sits comfortably inside a single synchronous area. Denmark is the exception. Geographically, Denmark sits exactly on the fault line between the Continental and Nordic grids. This physically splits the country in two. West Denmark (DK1) is synchronized with Germany and the rest of Continental Europe. East Denmark (DK2) is synchronized with Sweden and the Nordic grid.",
         "visualLabel": "Infographic placeholder (Section 12)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "13. Neighboring Maturity",
+        "body": "This split makes the Danish grid inherently complex to operate within. While our neighbors—Germany to the south and Sweden to the north—have highly mature markets for Battery Energy Storage Systems (BESS), Denmark has lagged behind. In Germany and Sweden, high deployment volumes over the years have created streamlined integration processes and clear operational frameworks for system services.",
         "visualLabel": "Infographic placeholder (Section 13)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "14. The Documentation Bottleneck and Price Oligopoly",
+        "body": "The primary reason Denmark lacks this maturity is regulatory friction. Implementing a BESS project in Denmark requires navigating a notoriously strict, localized documentation and approval process based on EU regulations. This compliance barrier is so demanding that only a very small number of early players have successfully achieved grid approval. This lack of competition has created an oligopoly, allowing a few suppliers to dictate the market and charge artificially inflated prices for BESS hardware and integration.",
         "visualLabel": "Infographic placeholder (Section 14)"
       },
       {
-        "title": "",
-        "body": "",
+        "title": "15. Breaking the Bottleneck: The ZynexGroup Approach",
+        "body": "This is the specific bottleneck ZynexGroup is engineered to solve. Our objective is to master the entire chain—from the raw hardware architecture to the complex EU documentation and grid compliance protocols. By internalizing the expertise required to navigate Denmark's rigid approval process, we remove the friction, break the price oligopoly, and bring BESS deployment down to its true, scaled cost.",
         "visualLabel": "Infographic placeholder (Section 15)"
       }
     ]
