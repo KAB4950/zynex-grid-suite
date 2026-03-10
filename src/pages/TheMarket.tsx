@@ -63,7 +63,7 @@ const TheMarket = () => {
               }`}
               style={{ fontFamily: "var(--font-body)" }}
             >
-              {section.body || ""}
+              {section.body ? renderMarkdown(section.body) : ""}
             </div>
           </div>
         );
