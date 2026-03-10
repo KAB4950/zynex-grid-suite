@@ -1,103 +1,74 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "@/i18n/LanguageContext";
+import MarketVisualPlaceholder from "@/components/MarketVisualPlaceholder";
+import MarketArrowConnector from "@/components/MarketArrowConnector";
+
+const SECTION_COUNT = 8;
 
 const TheMarket = () => {
   const { t } = useTranslation();
-  const m = t.market_page;
+  const sections = t.market_story?.sections ?? [];
 
   return (
     <>
-      {/* Section 1: Software & Analytics Hero */}
-      <section className="w-full min-h-[80vh] pt-32 pb-24 px-8 md:px-16 flex flex-col items-center justify-center bg-slate-900 text-white">
-        <h1
-          className="text-5xl md:text-7xl font-semibold tracking-tight text-center max-w-5xl text-gradient-blue"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
-          {m.hero_title}
-        </h1>
-        <p
-          className="text-xl mt-6 text-center max-w-3xl leading-relaxed"
-          style={{ fontFamily: "var(--font-body)", color: "#d1d5db" }}
-        >
-          {m.hero_subtitle}
-        </p>
-        <div
-          className="w-full max-w-6xl mt-16 aspect-[21/9] border shadow-2xl flex items-center justify-center rounded-none"
-          style={{ backgroundColor: "#0F172A", borderColor: "rgb(51 65 85)" }}
-        >
-          <span className="text-sm tracking-wide text-center px-6" style={{ color: "rgb(100 116 139)" }}>
-            {m.hero_placeholder}
-          </span>
-        </div>
-      </section>
+      {Array.from({ length: SECTION_COUNT }).map((_, i) => {
+        const isDark = i % 2 === 1;
+        const imageFirst = i % 2 === 1; // alternating: even=text-left, odd=text-right
+        const section = sections[i] ?? { title: "", body: "", visualLabel: "" };
 
-      {/* Section 2: Revenue Logic (3-Column Financial Grid) */}
-      <section className="py-24 px-8 md:px-16 bg-background">
-        <div className="max-w-7xl mx-auto">
-          <h2
-            className="text-3xl font-semibold mb-12 text-foreground"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
-            {m.revenue_title}
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { tag: m.card1_tag, title: m.card1_title, body: m.card1_body },
-              { tag: m.card2_tag, title: m.card2_title, body: m.card2_body },
-              { tag: m.card3_tag, title: m.card3_title, body: m.card3_body },
-            ].map((card, i) => (
-              <div
-                key={i}
-                className="border-t-4 border-primary bg-secondary p-8 flex flex-col h-full rounded-none hover:bg-background hover:shadow-lg transition-all duration-300"
-              >
-                <span className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">
-                  {card.tag}
-                </span>
-                <h3
-                  className="text-2xl font-semibold mb-4 text-foreground"
-                  style={{ fontFamily: "var(--font-heading)" }}
-                >
-                  {card.title}
-                </h3>
-                <p className="text-muted-foreground flex-grow leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
-                  {card.body}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3: Data Visualization & Yield Modeling */}
-      <section className="py-24 px-8 md:px-16 bg-background border-y border-border">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
-          <div className="md:w-1/2">
+        const textBlock = (
+          <div className="flex flex-col justify-center">
             <h2
-              className="text-3xl font-semibold mb-6 text-foreground"
+              className={`text-3xl md:text-4xl font-semibold ${isDark ? "text-white" : "text-foreground"}`}
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              {m.viz_title}
+              {section.title || `Section ${i + 1}`}
             </h2>
-            <p className="text-muted-foreground leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
-              {m.viz_body}
-            </p>
-            <Link
-              to="/contact"
-              className="inline-block mt-8 px-8 py-4 bg-primary text-primary-foreground rounded-none uppercase tracking-wider text-sm font-semibold hover:opacity-90 transition-colors"
+            <div
+              className={`mt-6 text-lg leading-relaxed whitespace-pre-line ${
+                isDark ? "text-white/80" : "text-foreground/80"
+              }`}
+              style={{ fontFamily: "var(--font-body)" }}
             >
-              {m.cta_button}
-            </Link>
+              {section.body || ""}
+            </div>
           </div>
-          <div
-            className="w-full md:w-1/2 border border-border aspect-[4/3] flex items-center justify-center rounded-none"
-            style={{ backgroundColor: "#F6F6F6" }}
-          >
-            <span className="text-sm text-muted-foreground tracking-wide text-center px-6">
-              {m.viz_placeholder}
-            </span>
+        );
+
+        const visualBlock = (
+          <MarketVisualPlaceholder
+            label={section.visualLabel || `Infographic placeholder (Section ${i + 1})`}
+            sectionIndex={i}
+            dark={isDark}
+          />
+        );
+
+        return (
+          <div key={i}>
+            {i > 0 && <MarketArrowConnector fromDark={!isDark} />}
+            <section
+              className={`py-20 md:py-28 px-8 md:px-16 ${isDark ? "bg-foreground" : "bg-background"}`}
+              style={i === 0 ? { paddingTop: "10rem" } : undefined}
+            >
+              <div className="max-w-7xl mx-auto">
+                {/* Desktop: alternating 2-col. Mobile: text above visual */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+                  {imageFirst ? (
+                    <>
+                      <div className="order-2 md:order-1">{visualBlock}</div>
+                      <div className="order-1 md:order-2">{textBlock}</div>
+                    </>
+                  ) : (
+                    <>
+                      <div>{textBlock}</div>
+                      <div>{visualBlock}</div>
+                    </>
+                  )}
+                </div>
+              </div>
+            </section>
           </div>
-        </div>
-      </section>
+        );
+      })}
     </>
   );
 };
