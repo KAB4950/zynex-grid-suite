@@ -36,7 +36,7 @@ const renderMarkdown = (text: string) => {
   flushList();
   return elements;
 };
-
+const SECTION_COUNT = 8;
 
 const TheMarket = () => {
   const { t } = useTranslation();
