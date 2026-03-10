@@ -103,6 +103,19 @@ const TheMarket = () => {
           </div>
         );
       })}
+
+      {/* Final CTA */}
+      <section className="py-20 md:py-28 px-8 md:px-16 bg-foreground">
+        <div className="max-w-3xl mx-auto text-center">
+          <a
+            href="/contact"
+            className="inline-block px-12 py-5 text-lg font-semibold tracking-wide bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+            style={{ fontFamily: "var(--font-heading)" }}
+          >
+            {t.market_story?.cta_button ?? "Request Investment Analysis"}
+          </a>
+        </div>
+      </section>
     </>
   );
 };
