@@ -12,12 +12,12 @@ interface InfraSectionProps {
 }
 
 const InfraSection = ({ title, body, cta, ctaLink, placeholder, imageFirst = false }: InfraSectionProps) => {
-  const textBlock = (
-    <div className="flex flex-col justify-center">
+  const textBlock =
+  <div className="flex flex-col justify-center">
       <h2
-        className="text-3xl text-foreground"
-        style={{ fontFamily: "var(--font-heading)" }}
-      >
+      className="text-3xl text-foreground"
+      style={{ fontFamily: "var(--font-heading)" }}>
+      
         {title}
       </h2>
       <p className="mt-4 mb-8 text-lg text-foreground/80 leading-relaxed">
@@ -25,44 +25,44 @@ const InfraSection = ({ title, body, cta, ctaLink, placeholder, imageFirst = fal
       </p>
       <div>
         <Button
-          asChild
-          variant="outline"
-          className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors px-6 py-2.5 h-auto text-sm tracking-wider uppercase"
-        >
+        asChild
+        variant="outline"
+        className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors px-6 py-2.5 h-auto text-sm tracking-wider uppercase">
+        
           <Link to={ctaLink}>{cta}</Link>
         </Button>
       </div>
-    </div>
-  );
+    </div>;
 
-  const imageBlock = (
-    <div
-      className="w-full min-h-[600px] rounded-none flex items-center justify-center"
-      style={{ backgroundColor: "#F6F6F6" }}
-    >
+
+  const imageBlock =
+  <div
+    className="w-full min-h-[600px] rounded-none flex items-center justify-center"
+    style={{ backgroundColor: "#F6F6F6" }}>
+    
       <span className="text-sm text-muted-foreground tracking-wide text-center px-6">
         {placeholder}
       </span>
-    </div>
-  );
+    </div>;
 
-  return (
-    <section className="py-28 px-8 md:px-16">
-      <div className="mx-auto max-w-7xl grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 items-center">
-        {imageFirst ? (
-          <>
-            {imageBlock}
-            {textBlock}
-          </>
-        ) : (
-          <>
-            {textBlock}
-            {imageBlock}
-          </>
-        )}
-      </div>
-    </section>
-  );
+
+  return;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 };
 
 const InfrastructureRouting = () => {
@@ -75,25 +75,25 @@ const InfrastructureRouting = () => {
         body={t.infra.battery_body}
         cta={t.infra.battery_cta}
         ctaLink="/zg-261"
-        placeholder={t.infra.battery_placeholder}
-      />
+        placeholder={t.infra.battery_placeholder} />
+      
       <InfraSection
         title={t.infra.market_title}
         body={t.infra.market_body}
         cta={t.infra.market_cta}
         ctaLink="/market"
         placeholder={t.infra.market_placeholder}
-        imageFirst
-      />
+        imageFirst />
+      
       <InfraSection
         title={t.infra.about_title}
         body={t.infra.about_body}
         cta={t.infra.about_cta}
         ctaLink="/about"
-        placeholder={t.infra.about_placeholder}
-      />
-    </>
-  );
+        placeholder={t.infra.about_placeholder} />
+      
+    </>);
+
 };
 
 export default InfrastructureRouting;
