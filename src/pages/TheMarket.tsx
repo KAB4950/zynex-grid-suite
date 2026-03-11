@@ -80,8 +80,8 @@ const TheMarket = () => {
           <FadeImage
             src={imageSrc}
             alt={section.visualLabel || `Section ${i + 1}`}
-            fadeDirection="bottom"
-            fadeStrength={65}
+            fadeDirection={i === 0 ? "edges" : "bottom"}
+            fadeStrength={i === 0 ? 70 : 65}
           />
         ) : (
           <MarketVisualPlaceholder
