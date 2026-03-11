@@ -79,7 +79,7 @@ const TheMarket = () => {
           <img
             src={imageSrc}
             alt={section.visualLabel || `Section ${i + 1}`}
-            className="w-full aspect-[4/3] object-cover rounded-none"
+            className="w-full h-auto object-contain rounded-none"
             loading="lazy"
           />
         ) : (
