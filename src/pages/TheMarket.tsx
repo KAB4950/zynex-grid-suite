@@ -47,6 +47,7 @@ const SECTION_IMAGES: Record<number, string> = {
   13: "/Market_Documentation2.webp", // Section 14
   14: "/Market_BottleNeck2.webp",    // Section 15
   15: "/Market_GirdLock2.webp",      // Section 16
+  16: "/Market_Commodity.webp",      // Section 17
 };
 
 const TheMarket = () => {
