@@ -1,6 +1,6 @@
 import { useTranslation } from "@/i18n/LanguageContext";
 import MarketVisualPlaceholder from "@/components/MarketVisualPlaceholder";
-import FadeImage from "@/components/ui/FadeImage";
+
 
 /** Minimal markdown: **bold**, bullet lists (* item), newlines */
 const renderMarkdown = (text: string) => {
@@ -77,11 +77,11 @@ const TheMarket = () => {
         );
 
         const visualBlock = imageSrc ? (
-          <FadeImage
+          <img
             src={imageSrc}
             alt={section.visualLabel || `Section ${i + 1}`}
-            fadeDirection={i === 0 ? "edges" : "bottom"}
-            fadeStrength={i === 0 ? 70 : 65}
+            className="w-full h-auto object-contain"
+            loading="lazy"
           />
         ) : (
           <MarketVisualPlaceholder
