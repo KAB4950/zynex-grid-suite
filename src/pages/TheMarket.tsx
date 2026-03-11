@@ -40,12 +40,13 @@ const SECTION_COUNT = 22;
 
 // Map section index to image path (0-indexed)
 const SECTION_IMAGES: Record<number, string> = {
-  0: "/Market_Balance.webp",       // Section 1
-  3: "/Market_UpDown.webp",        // Section 4
-  5: "/Market_ZG_261_LineUp.webp", // Section 6
-  13: "/Market_Documentation.webp", // Section 14
-  14: "/Market_BottleNeck.webp",    // Section 15
-  15: "/Market_GirdLock.webp",      // Section 16
+  0: "/Market_Balance2.webp",       // Section 1
+  2: "/Market_Assets2.webp",        // Section 3
+  3: "/Market_UpDown2.webp",        // Section 4
+  5: "/Market_ZG_261_LineUp2.webp", // Section 6
+  13: "/Market_Documentation2.webp", // Section 14
+  14: "/Market_BottleNeck2.webp",    // Section 15
+  15: "/Market_GirdLock2.webp",      // Section 16
 };
 
 const TheMarket = () => {
