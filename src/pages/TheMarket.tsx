@@ -41,6 +41,7 @@ const SECTION_COUNT = 22;
 // Map section index to image path (0-indexed)
 const SECTION_IMAGES: Record<number, string> = {
   0: "/Market_Balance2.webp",       // Section 1
+  1: "/Market_EnerginetPredictions.svg", // Section 2
   2: "/Market_Assets2.webp",        // Section 3
   3: "/Market_UpDown2.webp",        // Section 4
   5: "/Market_ZG_261_LineUp2.webp", // Section 6
