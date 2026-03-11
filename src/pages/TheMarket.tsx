@@ -1,6 +1,5 @@
 import { useTranslation } from "@/i18n/LanguageContext";
 import MarketVisualPlaceholder from "@/components/MarketVisualPlaceholder";
-import MarketArrowConnector from "@/components/MarketArrowConnector";
 
 /** Minimal markdown: **bold**, bullet lists (* item), newlines */
 const renderMarkdown = (text: string) => {
@@ -16,7 +15,6 @@ const renderMarkdown = (text: string) => {
   };
 
   const renderInline = (s: string) => {
-    // Handle **bold**
     const parts = s.split(/\*\*(.*?)\*\*/g);
     return parts.map((part, i) => (i % 2 === 1 ? <strong key={i}>{part}</strong> : part));
   };
@@ -36,7 +34,18 @@ const renderMarkdown = (text: string) => {
   flushList();
   return elements;
 };
+
 const SECTION_COUNT = 22;
+
+// Map section index to image path (0-indexed)
+const SECTION_IMAGES: Record<number, string> = {
+  0: "/Market_Balance.webp",       // Section 1
+  3: "/Market_UpDown.webp",        // Section 4
+  5: "/Market_ZG_261_LineUp.webp", // Section 6
+  13: "/Market_Documentation.webp", // Section 14
+  14: "/Market_BottleNeck.webp",    // Section 15
+  15: "/Market_GirdLock.webp",      // Section 16
+};
 
 const TheMarket = () => {
   const { t } = useTranslation();
@@ -45,22 +54,20 @@ const TheMarket = () => {
   return (
     <>
       {Array.from({ length: SECTION_COUNT }).map((_, i) => {
-        const isDark = i % 2 === 1;
-        const imageFirst = i % 2 === 1; // alternating: even=text-left, odd=text-right
+        const imageFirst = i % 2 === 1;
         const section = sections[i] ?? { title: "", body: "", visualLabel: "" };
+        const imageSrc = SECTION_IMAGES[i];
 
         const textBlock = (
           <div className="flex flex-col justify-center">
             <h2
-              className={`text-3xl md:text-4xl font-semibold ${isDark ? "text-white" : "text-foreground"}`}
+              className="text-3xl md:text-4xl font-semibold text-foreground"
               style={{ fontFamily: "var(--font-heading)" }}
             >
               {section.title || `Section ${i + 1}`}
             </h2>
             <div
-              className={`mt-6 text-lg leading-relaxed whitespace-pre-line ${
-                isDark ? "text-white/80" : "text-foreground/80"
-              }`}
+              className="mt-6 text-lg leading-relaxed whitespace-pre-line text-foreground/80"
               style={{ fontFamily: "var(--font-body)" }}
             >
               {section.body ? renderMarkdown(section.body) : ""}
@@ -68,23 +75,28 @@ const TheMarket = () => {
           </div>
         );
 
-        const visualBlock = (
+        const visualBlock = imageSrc ? (
+          <img
+            src={imageSrc}
+            alt={section.visualLabel || `Section ${i + 1}`}
+            className="w-full aspect-[4/3] object-cover rounded-none"
+            loading="lazy"
+          />
+        ) : (
           <MarketVisualPlaceholder
             label={section.visualLabel || `Infographic placeholder (Section ${i + 1})`}
             sectionIndex={i}
-            dark={isDark}
+            dark={false}
           />
         );
 
         return (
           <div key={i}>
-            
             <section
-              className={`py-20 md:py-28 px-8 md:px-16 ${isDark ? "bg-foreground" : "bg-background"}`}
+              className="py-20 md:py-28 px-8 md:px-16 bg-background"
               style={i === 0 ? { paddingTop: "10rem" } : undefined}
             >
               <div className="max-w-7xl mx-auto">
-                {/* Desktop: alternating 2-col. Mobile: text above visual */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
                   {imageFirst ? (
                     <>
@@ -105,7 +117,7 @@ const TheMarket = () => {
       })}
 
       {/* Final CTA */}
-      <section className="py-20 md:py-28 px-8 md:px-16 bg-foreground">
+      <section className="py-20 md:py-28 px-8 md:px-16 bg-background">
         <div className="max-w-3xl mx-auto text-center">
           <a
             href="/contact"
