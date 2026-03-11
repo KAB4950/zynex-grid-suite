@@ -1,6 +1,6 @@
 import { useTranslation } from "@/i18n/LanguageContext";
 import MarketVisualPlaceholder from "@/components/MarketVisualPlaceholder";
-import FadeImage from "@/components/ui/FadeImage";
+
 
 /** Minimal markdown: **bold**, bullet lists (* item), newlines */
 const renderMarkdown = (text: string) => {
