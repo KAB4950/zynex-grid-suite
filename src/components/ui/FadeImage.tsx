@@ -9,11 +9,25 @@ interface FadeImageProps {
   className?: string;
 }
 
+const getEdgesMask = (strength: number) => {
+  const fade = 100 - strength;
+  return {
+    maskImage: [
+      `linear-gradient(to right, transparent, black ${fade}%, black ${strength}%, transparent)`,
+      `linear-gradient(to bottom, transparent, black ${fade}%, black ${strength}%, transparent)`,
+    ].join(", "),
+    WebkitMaskImage: [
+      `linear-gradient(to right, transparent, black ${fade}%, black ${strength}%, transparent)`,
+      `linear-gradient(to bottom, transparent, black ${fade}%, black ${strength}%, transparent)`,
+    ].join(", "),
+    maskComposite: "intersect" as const,
+    WebkitMaskComposite: "source-in" as const,
+  };
+};
+
 const getMask = (direction: string, strength: number) => {
+  if (direction === "edges") return null;
   const s = `${strength}%`;
-  if (direction === "edges") {
-    return `radial-gradient(ellipse at center, black ${s}, transparent 100%)`;
-  }
   const dirMap: Record<string, string> = {
     bottom: "to bottom",
     top: "to top",
@@ -31,6 +45,8 @@ const FadeImage: React.FC<FadeImageProps> = ({
   className,
 }) => {
   const mask = getMask(fadeDirection, fadeStrength);
+  const isEdges = fadeDirection === "edges";
+  const edgesStyle = isEdges ? getEdgesMask(fadeStrength) : {};
 
   return (
     <div className={cn("w-full", className)}>
@@ -39,10 +55,11 @@ const FadeImage: React.FC<FadeImageProps> = ({
         alt={alt}
         className="w-full h-auto object-contain"
         loading="lazy"
-        style={{
-          maskImage: mask,
-          WebkitMaskImage: mask,
-        }}
+        style={
+          isEdges
+            ? edgesStyle
+            : { maskImage: mask!, WebkitMaskImage: mask! }
+        }
       />
     </div>
   );
