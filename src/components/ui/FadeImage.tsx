@@ -45,6 +45,8 @@ const FadeImage: React.FC<FadeImageProps> = ({
   className,
 }) => {
   const mask = getMask(fadeDirection, fadeStrength);
+  const isEdges = fadeDirection === "edges";
+  const edgesStyle = isEdges ? getEdgesMask(fadeStrength) : {};
 
   return (
     <div className={cn("w-full", className)}>
@@ -53,10 +55,11 @@ const FadeImage: React.FC<FadeImageProps> = ({
         alt={alt}
         className="w-full h-auto object-contain"
         loading="lazy"
-        style={{
-          maskImage: mask,
-          WebkitMaskImage: mask,
-        }}
+        style={
+          isEdges
+            ? edgesStyle
+            : { maskImage: mask!, WebkitMaskImage: mask! }
+        }
       />
     </div>
   );
