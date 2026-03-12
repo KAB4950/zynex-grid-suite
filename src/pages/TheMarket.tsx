@@ -1,5 +1,6 @@
 import { useTranslation } from "@/i18n/LanguageContext";
 import MarketVisualPlaceholder from "@/components/MarketVisualPlaceholder";
+import EuropeMap from "@/components/EuropeMap";
 
 
 /** Minimal markdown: **bold**, bullet lists (* item), newlines */
@@ -167,6 +168,33 @@ const TheMarket = () => {
                 </div>
               </div>
             </section>
+
+            {i === 8 && (
+              <>
+                {/* Europe Map scroll animation — spans between Section 9 and Section 13 */}
+                <div className="h-24 md:h-32 bg-background" />
+                <div className="w-full bg-background">
+                  <div className="max-w-7xl mx-auto px-8 md:px-16 pb-12">
+                    <div className="text-center">
+                      <h2
+                        className="text-3xl md:text-4xl font-semibold text-foreground"
+                        style={{ fontFamily: "var(--font-heading)" }}
+                      >
+                        Denmark: Where Two Grids Meet
+                      </h2>
+                      <p
+                        className="mt-4 text-lg text-foreground/70"
+                        style={{ fontFamily: "var(--font-body)" }}
+                      >
+                        Scroll to explore how Denmark sits at the junction of Europe's Continental and Nordic synchronous grids.
+                      </p>
+                    </div>
+                  </div>
+                  <EuropeMap />
+                </div>
+                <div className="h-24 md:h-32 bg-background" />
+              </>
+            )}
           </div>
         );
       })}
