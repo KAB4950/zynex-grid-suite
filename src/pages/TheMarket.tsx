@@ -62,6 +62,57 @@ const TheMarket = () => {
         const section = sections[i] ?? { title: "", body: "", visualLabel: "" };
         const imageSrc = SECTION_IMAGES[i];
 
+        // Section 7 (index 6): Information box - no image, no full section
+        if (i === 6) {
+          return (
+            <div key={i}>
+              <section className="py-12 md:py-16 px-8 md:px-16 bg-background">
+                <div className="max-w-3xl mx-auto">
+                  <div className="rounded-lg border border-foreground/10 bg-muted/40 p-8 md:p-10">
+                    <h3
+                      className="text-xl md:text-2xl font-semibold text-foreground mb-4"
+                      style={{ fontFamily: "var(--font-heading)" }}
+                    >
+                      {section.title || `Section ${i + 1}`}
+                    </h3>
+                    <div
+                      className="text-base leading-relaxed whitespace-pre-line text-foreground/80"
+                      style={{ fontFamily: "var(--font-body)" }}
+                    >
+                      {section.body ? renderMarkdown(section.body) : ""}
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          );
+        }
+
+        // Section 8 (index 7): Centered text only, extra whitespace after
+        if (i === 7) {
+          return (
+            <div key={i}>
+              <section className="py-20 md:py-28 px-8 md:px-16 bg-background">
+                <div className="max-w-3xl mx-auto text-center">
+                  <h2
+                    className="text-3xl md:text-4xl font-semibold text-foreground"
+                    style={{ fontFamily: "var(--font-heading)" }}
+                  >
+                    {section.title || `Section ${i + 1}`}
+                  </h2>
+                  <div
+                    className="mt-6 text-lg leading-relaxed whitespace-pre-line text-foreground/80"
+                    style={{ fontFamily: "var(--font-body)" }}
+                  >
+                    {section.body ? renderMarkdown(section.body) : ""}
+                  </div>
+                </div>
+              </section>
+              <div className="h-16 md:h-24 bg-background" />
+            </div>
+          );
+        }
+
         const textBlock = (
           <div className="flex flex-col justify-center">
             <h2
