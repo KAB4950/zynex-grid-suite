@@ -1,6 +1,6 @@
 import { useTranslation } from "@/i18n/LanguageContext";
 import MarketVisualPlaceholder from "@/components/MarketVisualPlaceholder";
-import EuropeMap from "@/components/EuropeMap2";
+import EuropeMap from "@/components/EuropeMap3";
 
 
 /** Minimal markdown: **bold**, bullet lists (* item), newlines */
