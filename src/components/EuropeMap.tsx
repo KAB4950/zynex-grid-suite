@@ -1,7 +1,7 @@
 /**
  * EuropeMap.tsx
  *
- * A scroll-animated SVG map of Europe for Lovable/Vite + React + TypeScript + Tailwind + Framer Motion.
+ * A scroll-animated SVG map of Europe for Vite + React + TypeScript + Tailwind + Framer Motion.
  *
  * SCROLL ANIMATION STEPS (500vh tall container with sticky SVG):
  *  Step 1 (0–20%):   All countries neutral grey #D1D5DB. Full Europe visible.
